@@ -1,0 +1,143 @@
+{
+	"name": "Farmington Woods",
+	"id": "04-06",
+	"subdivision": [
+		{ "name":"1) Woodland Terrace Retirement", "streets": [
+			{ "name":"KILDAIRE WOODS DR"},
+			{ "name":"TERRACE WOOD CT"}
+		] },
+		{ "name":"2) Stoneybrook Estates", "streets": [
+			{ "name":"MAYNARD RD"},
+			{ "name":"OAKRIDGE RD"},
+			{ "name":"HAMPTON VALLEY RD"},
+			{ "name":"WILLOWBROOK DR"},
+			{ "name":"HOLLY CIR"},
+			{ "name":"OREGON CIR"},
+			{ "name":"WOODLAND CT"}
+		] },
+		{ "name":"3) Farmington Woods West", "streets": [
+			{ "name":"REGENCY PL"},
+			{ "name":"EAGLE CT"},
+			{ "name":"SUMMERTIME PL"},
+			{ "name":"MOCKINGBIRD LN"},
+			{ "name":"OVERVIEW LN"},
+			{ "name":"PARKVIEW CIR"},
+			{ "name":"FARMINGTON WOODS DR", "max":"399"}
+		] },
+		{ "name":"4) Farmington Woods East", "streets": [
+			{ "name":"FARMSTEAD DR"},
+			{ "name":"HUNTERS POINT WAY"},
+			{ "name":"ROCK CREEK LN"},
+			{ "name":"FAIRGREEN WAY"},
+			{ "name":"BROOKCLIFF LN"},
+			{ "name":"HUNTWOOD LN"},
+			{ "name":"MOSSWOOD LN"},
+			{ "name":"STONY POINT LN"},
+			{ "name":"HEATHERS GLN"},
+			{ "name":"YUBINARANDA CIR"},
+			{ "name":"BOXWOOD CT"},
+			{ "name":"CREEKSTONE LN"},
+			{ "name":"FARMINGTON WOODS DR", "min":"400"}
+		] },
+		{ "name":"5) Twin Oaks / Hanover", "streets": [
+			{ "name":"BISSETT ST"},
+			{ "name":"NEW KENT PL"},
+			{ "name":"HANOVER PL"},
+			{ "name":"CHRIS CT"}
+		] },
+		{ "name":"6) Village of Troon", "streets": [
+			{ "name":"TROON VILLAGE LN"},
+			{ "name":"MCKIRKLAND CT"},
+			{ "name":"RIGSIDE PL"},
+			{ "name":"CARLUKE CT"},
+			{ "name":"COALBURN PL"},
+			{ "name":"CALTON HILL CT"},
+			{ "name":"BAINES CT"},
+			{ "name":"THISTLE BRIAR PL"},
+			{ "name":"CLYDE BANK CT"},
+			{ "name":"LEITH MEADOW CT"}
+		] },
+		{ "name":"7) Hawthorne at the Parkway", "streets": [
+			{ "name":"KINGSCLERE DR"},
+			{ "name":"BALWINS GATE"},
+			{ "name":"WHITEMARK LN"},
+			{ "name":"HERTFORDSHIRE CT"},
+			{ "name":"HALESWORTH DR"}
+		] },
+		{ "name":"8a) Wimbledon West", "streets": [
+			{ "name":"COVENTRY LN"},
+			{ "name":"KETTERING LN"},
+			{ "name":"DRYSDALE CT"},
+			{ "name":"SHRIVER CT"},
+			{ "name":"CONNORS CIR"},
+			{ "name":"KRAMER CT"},
+			{ "name":"LACOSTE LN"},
+			{ "name":"MARTINA CT"},
+			{ "name":"ROSEWALL LN"},
+			{ "name":"WESTPORT DR"},
+			{ "name":"MCENROE CIR"}
+		] },
+		{ "name":"8b) Wimbledon SouthWest", "streets": [
+			{ "name":"CABERNET CIR"},
+			{ "name":"EVERT DR"},
+			{ "name":"TIMBER VIEW LN"},
+			{ "name":"LAVER DR"},
+			{ "name":"BEAUJOLAIS CT"},
+			{ "name":"ROTHSCHILD PL"},
+			{ "name":"CHARDONNAY LN"},
+			{ "name":"RIESLING PL"},
+			{ "name":"LENDL CT"},
+			{ "name":"COCHET CT"},
+			{ "name":"SEDGMAN CT"}
+		] },
+		{ "name":"9) Wimbledon East", "streets": [
+			{ "name":"COORSDALE DR", "min":"300"},
+			{ "name":"WILANDER DR"},
+			{ "name":"WIGHTMAN CT"},
+			{ "name":"BOROTRA CT"},
+			{ "name":"RIDGEPATH WAY"},
+			{ "name":"PARSONS LN"},
+			{ "name":"CHRISTENBURY LN"},
+			{ "name":"AGASSI CT"}
+		] },
+		{ "name":"10) Waltonwood Retirement", "streets": [
+			{ "name":"KIRKSHIRE CIR"},
+			{ "name":"CARY PKWY", "min":"740", "max":"760"}
+		] },
+		{ "name":"11) Spring Arbor Assisted Living", "streets": [
+			{ "name":"KILDAIRE FARM RD", "min":"1705", "max":"1705"},
+			{ "name":"SPRINGHURST LN"},
+			{ "name":"SPRING FLOWER CT"}
+		] },
+		{ "name":"12) Seabrook North (Farren Forrest + MacDonalds Woods)", "streets": [
+			{ "name":"BRANNIGAN PL"},
+			{ "name":"FARREN CT"},
+			{ "name":"TULLIALLAN LN"},
+			{ "name":"LAMLASH LN"},
+			{ "name":"HAGAN CT"},
+			{ "name":"DUNHAGAN PL", "min":"0", "max":"299"},
+			{ "name":"SEABROOK AVE"}
+		] },
+		{ "name":"13) Seabrook South (MacDonalds Woods, pepperdine, etc", "streets": [
+			{ "name":"HEIDINGER DR"},
+			{ "name":"AKIRY CT"},
+			{ "name":"DUNHAGAN PL", "min":"300"},
+			{ "name":"COORSDALE DR", "max":"299"}
+		] },
+		{ "name":"14) Ponderosa", "streets": [
+			{ "name":"GUERNSEY TRL"},
+			{ "name":"KEISLER DR"},
+			{ "name":"HEREFORD LN"}
+		] },
+		{ "name":"15) Thornewood", "streets": [
+			{ "name":"THORNEWOOD DR"},
+			{ "name":"WAXWOOD LN"}
+		] },
+		{ "name":"16) Larkwood Ln + Cary Health and Rehabilitation ", "streets": [
+			{ "name":"DEWBERRY CT"},
+			{ "name":"LARKWOOD LN"},
+			{ "name":"FROSTWOOD DR"},
+			{ "name":"TRYON RD", "min":"6590", "max":"6670"}
+		] }
+	]
+}

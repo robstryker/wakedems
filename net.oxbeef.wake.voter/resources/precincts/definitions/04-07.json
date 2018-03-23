@@ -1,0 +1,117 @@
+{
+	"name": "Fellowship Of Christ Presbyterian Church",
+	"id": "04-07",
+	"subdivision": [
+		{ "name":"1) Kildaire Farm North", "streets": [
+			{ "name":"KILDAIRE FARM RD", "min":"1412", "max":"1502"},
+			{ "name":"DABNEY RD"},
+			{ "name":"AMESBURY LN"},
+			{ "name":"CASTLEWOOD DR"},
+			{ "name":"MORAY CT"},
+			{ "name":"QUEENSFERRY RD", "min":"100", "max":"399"},
+			{ "name":"BERVIE CT"}
+		] },
+		{ "name":"2) Woods of Kildaire", "streets": [
+			{ "name":"KIERNAN CHOICE"},
+			{ "name":"CASSIDY CT"},
+			{ "name":"OKELLY LN"},
+			{ "name":"BRENDAN CHOICE"},
+			{ "name":"BEACHERS BROOK LN"},
+			{ "name":"KILARNEY DR"},
+			{ "name":"PRIMROSE LN"},
+			{ "name":"ROSECOMMON LN"},
+			{ "name":"CUNNINGHAM CT"},
+			{ "name":"CARMEL CT"},
+			{ "name":"ABERNATHY CT"},
+			{ "name":"CRIMMONS CIR"},
+			{ "name":"BOURKE PL"},
+			{ "name":"ERSKINE CT"},
+			{ "name":"DURYER CT"}
+		] },
+		{ "name":"3) Royal Ridge", "streets": [
+			{ "name":"KING GEORGE LOOP"},
+			{ "name":"PRINCE ALBERT LN"},
+			{ "name":"PRINCE WILLIAM LN"},
+			{ "name":"KING EDWARD CT"},
+			{ "name":"KING HENRY CT"}
+		] },
+		{ "name":"4) Normandie", "streets": [
+			{ "name":"DEVIMY CT"},
+			{ "name":"VICTOR HUGO DR"},
+			{ "name":"DEGAS CT"},
+			{ "name":"ESPLANADE CT"},
+			{ "name":"EMILE ZOLA DR"},
+			{ "name":"RENOIR CT"},
+			{ "name":"BALZAC CT"},
+			{ "name":"JULES VERNE WAY"}
+		] },
+		{ "name":"5) MacGregor Towns North", "streets": [
+			{ "name":"MICHELIN PL"},
+			{ "name":"CITREON CT"},
+			{ "name":"BRITTANY PL"},
+			{ "name":"TROPEZ LN"},
+			{ "name":"RONSARD LN"},
+			{ "name":"VERSAILLES DR"}
+		] },
+		{ "name":"6) MacGregor Towns South", "streets": [
+			{ "name":"MARSEILLE PL"},
+			{ "name":"CHALON DR"},
+			{ "name":"RAPHAEL DR"},
+			{ "name":"MARTINIQUE PL"},
+			{ "name":"BASTILLE CT"},
+			{ "name":"BORDEAUX LN", "min":"0", "max":"204"},
+			{ "name":"CHARLEMAGNE CT"},
+			{ "name":"NAPOLEON CT"}
+		] },
+		{ "name":"7) QueensFerry +", "streets": [
+			{ "name":"GOVAN LN"},
+			{ "name":"ESK CT"},
+			{ "name":"TAIN CT"},
+			{ "name":"RUTHERGLEN DR", "min":"0", "max":"400"},
+			{ "name":"AYR CT"},
+			{ "name":"QUEENSFERRY RD", "min":"706", "max":"1099"},
+			{ "name":"EDINBURGH DR", "min":"314"},
+			{ "name":"BORDEAUX LN", "min":"205"},
+			{ "name":"CORSICA LN"},
+			{ "name":"CHRISTOFLE LN"},
+			{ "name":"PANDE CIR"}
+		] },
+		{ "name":"8) QueensFerry Loop + Edinburgh Green", "streets": [
+			{ "name":"QUEENSFERRY RD", "min":"1100"},
+			{ "name":"EDINBURGH DR", "min":"200", "max":"308"},
+			{ "name":"RUTHERGLEN DR", "min":"401", "max":"421"},
+			{ "name":"HOY CT"}
+		] },
+		{ "name":"9) MacGregor Downs North", "streets": [
+			{ "name":"QUEENSFERRY RD", "min":"400", "max":"705"},
+			{ "name":"BRUCE DR"},
+			{ "name":"KEVIN WAY"},
+			{ "name":"DUMBARTON CT"},
+			{ "name":"DUNEDIN CT"},
+			{ "name":"GREENOCK CT"},
+			{ "name":"DUNCANSBY CT"}
+		] },
+		{ "name":"10) Southeast of Lake", "streets": [
+			{ "name":"PRESTWICK PL"},
+			{ "name":"TWEED CIR"},
+			{ "name":"ST ANDREWS LN"},
+			{ "name":"KELSO CT"},
+			{ "name":"GLASGOW RD", "min":"300", "max":"500"},
+			{ "name":"LOCHINVAR CT"}
+		] },
+		{ "name":"11) East of Lake", "streets": [
+			{ "name":"ANNANDALE DR", "min":"0", "max":"399"},
+			{ "name":"CANTY CT"},
+			{ "name":"DUNDEE CT"},
+			{ "name":"GLASGOW RD", "min":"200", "max":"299"}
+		] },
+		{ "name":"12) Annadale East to Kildaire Farms Rd", "streets": [
+			{ "name":"GLASGOW RD", "min":"0", "max":"199"},
+			{ "name":"PERTH CT"},
+			{ "name":"RONALDSBY DR"},
+			{ "name":"KINNAIRD LN"},
+			{ "name":"ANNANDALE DR", "min":"400"},
+			{ "name":"KILDAIRE FARM RD", "min":"1508", "max":"1615"}
+		] }
+	]
+}

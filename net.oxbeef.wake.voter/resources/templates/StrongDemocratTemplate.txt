@@ -1,0 +1,32 @@
+<center>
+   <img src="file:///home/rob/Documents/politics/precinct/04-06/tmp/wakedems.png" height=122 width=133/>
+</center>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<h3><center>To the residents of ${ADDR}:</center></h3>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+
+<font size="-1">
+My name is Rob Stryker, and I am a volunteer with the Wake County Democrat party, 
+working with precinct ${PRECINCT}. We have identified your home as a strong 
+democratic household based on the party registration and voting records of the 
+residents registered to vote at this address. <br/>
+
+${RESIDENTS}
+
+Our immediate goal is to split our precinct into ${NUM_SUBDIV} smaller, more manageable communities,
+and find one or two supporters in each area who are willing to take an active role in the 
+upcoming election season. <br/><br/>
+
+If you would like to help us organize this precinct further with activities such as 
+canvassing, phone-banking, or voter registration drives, or if you would like 
+to come to one of our monthly meetings to express your opinions on any positions 
+or strategies you'd like to see our precinct, or the Wake County party, take throughout
+the upcoming election season, please contact James Wolf at james.s.wolf2815@gmail.com
+<br/><br/>
+Thanks for your time. 
+<br/>
+ - Rob Stryker
+</font>

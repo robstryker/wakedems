@@ -1,0 +1,90 @@
+{
+	"name": "Triangle Aquatic Center",
+	"id": "04-03",
+	"subdivision": [
+		{ "name":"1) Ivy Meadows", "streets": [
+			{ "name":"IVY LN"},
+			{ "name":"LYERLY LN"},
+			{ "name":"CHAMPION DR"},
+			{ "name":"WALNUT ST", "min":"0", "max":"1223"}
+		] },
+		{ "name":"2) Walnut Hills 1", "streets": [
+			{ "name":"LANE DR"},
+			{ "name":"OXFORD PL"},
+			{ "name":"SCOTT PL"},
+			{ "name":"STURDIVANT DR", "min":"1200", "max":"1250"},
+			{ "name":"WALNUT ST", "min":"1307", "max":"1307"}
+		] },
+		{ "name":"3) Walnut Hills 2", "streets": [
+			{ "name":"STURDIVANT DR", "min":"900", "max":"1199", "type":"even"},
+			{ "name":"ASKHAM DR", "min":"0", "max":"1128"}
+		] },
+		{ "name":"4) Walnut Hills 3", "streets": [
+			{ "name":"STURDIVANT DR", "min":"1000", "max":"1199", "type":"odd"},
+			{ "name":"BERT CT"},
+			{ "name":"YORKSHIRE DR"},
+			{ "name":"WICKHAM DR"},
+			{ "name":"CLARE CIR"},
+			{ "name":"CLARE CT"},
+			{ "name":"OXON CT"},
+			{ "name":"SUFFOLK CT"},
+			{ "name":"MANCHESTER DR", "min":"927", "max":"1046"}
+		] },
+		{ "name":"5) Walnut Hills 4", "streets": [
+			{ "name":"DUNSFORD PL"},
+			{ "name":"MANCHESTER DR", "min":"1100"},
+			{ "name":"SHINCLIFFE CT"},
+			{ "name":"KIMBOLTON DR", "min":"1200", "max":"1224"}
+		] },
+		{ "name":"6) Walnut Ridge South", "streets": [
+			{ "name":"KIMBOLTON DR", "min":"1226"},
+			{ "name":"ASHFORD LN"},
+			{ "name":"FERNLEA CT"},
+			{ "name":"SPRINGHILL CT"},
+			{ "name":"GRAY OWL GARTH"},
+			{ "name":"DEERFIELD DR"},
+			{ "name":"NOTTINGHAM DR", "min":"1200", "max":"1230"}
+		] },
+		{ "name":"7) Walnut Ridge North", "streets": [
+			{ "name":"STOURBRIDGE CIR"},
+			{ "name":"WHITEHALL WAY"},
+			{ "name":"ESCHER LN"},
+			{ "name":"DANNOR CT"},
+			{ "name":"PENWOOD DR"}
+		] },
+		{ "name":"8) Williamsburg Manor", "streets": [
+			{ "name":"DONALDSON DR"},
+			{ "name":"DONALDSON CT"},
+			{ "name":"QUINCY CT"},
+			{ "name":"PATRICK CIR"},
+			{ "name":"HAMILTON CT"},
+			{ "name":"TAYLOR CT"},
+			{ "name":"JAMESTOWN CT"},
+			{ "name":"NOTTINGHAM DR", "min":"700", "max":"1199"},
+			{ "name":"NOTTINGHAM CT"},
+			{ "name":"NOTTINGHAM CIR"}
+		] },
+		{ "name":"9) Stoneridge Retirement", "streets": [
+			{ "name":"CONVENTION DR"}
+		] },
+		{ "name":"10) Buck Jones Rd & Nottingham East", "streets": [
+			{ "name":"BUCK JONES RD"},
+			{ "name":"KAREN CT"},
+			{ "name":"NOEL ANN CT"}
+		] },
+		{ "name":"11) Cary Brook Apartments", "streets": [
+			{ "name":"CASS CT"},
+			{ "name":"HARLON DR"},
+			{ "name":"JAMIE CT"},
+			{ "name":"LASKY CT"},
+			{ "name":"RUBIN CT"},
+			{ "name":"RAMSEY CT"},
+			{ "name":"WOODCREEK DR"},
+			{ "name":"ANDERSON CT"},
+			{ "name":"DARLENA CT"}
+		] },
+		{ "name":"12) Woodcreek Apartments", "streets": [
+			{ "name":"STEPHANIE DR"}
+		] }
+	]
+}

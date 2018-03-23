@@ -1,0 +1,126 @@
+{
+	"name": "Crossroads Ford Service Center",
+	"id": "04-12",
+	"subdivision": [
+		{ "name":"1) Prestwirk + Piney Plains", "streets": [
+			{ "name":"STEPHENS RD"},
+			{ "name":"CALLANDALE AVE"},
+			{ "name":"BENTBURY WAY"},
+			{ "name":"SWABIA CT"},
+			{ "name":"CELLARIUS LN"},
+			{ "name":"PUTNEY DR"},
+			{ "name":"PINEY PLAINS RD"}
+		] },
+		{ "name":"2) WELLINGTON EAST", "streets": [
+			{ "name":"PINK ACRES ST"},
+			{ "name":"TRYON RD", "min":"6320", "max":"6324"},
+			{ "name":"DURINGTON PL"},
+			{ "name":"HUNTERS XING"},
+			{ "name":"MERLOT CT"}
+		] },
+		{ "name":"3) WELLINGTON CENTRAL", "streets": [
+			{ "name":"WELLINGBOROUGH DR"},
+			{ "name":"KIRKFIELD DR"},
+			{ "name":"WOODRUFF CT"},
+			{ "name":"LAURENBROOK CT"},
+			{ "name":"PARK JAMES WAY"},
+			{ "name":"VICTORIA STATION CT"}
+		] },
+		{ "name":"4) WELLINGTON NORTH", "streets": [
+			{ "name":"FOREST PARK WAY"},
+			{ "name":"FLEMINGTON CT"},
+			{ "name":"DUNCAN HILL CT"},
+			{ "name":"WELLINGTON RIDGE LOOP"},
+			{ "name":"BULON DR"},
+			{ "name":"RENSHAW CT"},
+			{ "name":"RINA CT"},
+			{ "name":"WORDSMITH CT"},
+			{ "name":"BENEDUM PL"},
+			{ "name":"CATHERWOOD PL"}
+		] },
+		{ "name":"5) MacDonalds Woods", "streets": [
+			{ "name":"GLENGARRY DR"},
+			{ "name":"KILDONAN PL"},
+			{ "name":"ALICARY CT"},
+			{ "name":"DIRKSON CT"},
+			{ "name":"ARIDITH CT"},
+			{ "name":"SEABROOK AVE", "min":"1513", "max":"1600"}
+		] },
+		{ "name":"6) Pirates Cove South", "streets": [
+			{ "name":"DOCKSIDE PL"},
+			{ "name":"LANDING LN"},
+			{ "name":"SHOTTS CT"},
+			{ "name":"WIDEN CT"},
+			{ "name":"CORAL CT"},
+			{ "name":"KINGS FORK RD"},
+			{ "name":"DORCHESTER PINES CT"},
+			{ "name":"TOLLIVER CT"},
+			{ "name":"LIVELY CT"},
+			{ "name":"DEVINE WAY"},
+			{ "name":"GREENWOOD CIR", "min":"400", "max":"700", "type":"even"},
+			{ "name":"SEABROOK AVE", "min":"1300", "max":"1513", "type":"even"}
+		] },
+		{ "name":"7) Bay Drive", "streets": [
+			{ "name":"BAY DR"},
+			{ "name":"SEABROOK AVE", "min":"1301", "max":"1509", "type":"odd"},
+			{ "name":"BARBARY CT"}
+		] },
+		{ "name":"8) Hillsdale South", "streets": [
+			{ "name":"IMPERIAL RD"},
+			{ "name":"WELLINGTON LN"},
+			{ "name":"COUNTRY CT"},
+			{ "name":"SAVANNAH CIR"},
+			{ "name":"PIONEER CT"},
+			{ "name":"KINGSTON RIDGE RD", "min":"1307"},
+			{ "name":"BLOOMINGDALE DR"},
+			{ "name":"HILLSDALE CT"},
+			{ "name":"RICHMOND CT"},
+			{ "name":"MELLON CT"}
+		] },
+		{ "name":"9) Hillsdale North + Beaver Pond", "streets": [
+			{ "name":"KINGSTON RIDGE RD", "min":"0", "max":"1306"},
+			{ "name":"FAIRLANE RD"},
+			{ "name":"LAWRENCE RD"},
+			{ "name":"WHITBY CT"},
+			{ "name":"DEBRA DR", "min":"1424"},
+			{ "name":"BEAVER PINE WAY"}
+		] },
+		{ "name":"10) Walnut Street Park West", "streets": [
+			{ "name":"WALNUT ST"},
+			{ "name":"GREENWOOD CIR", "min":"800"},
+			{ "name":"DOYLIN DR"},
+			{ "name":"DEBRA DR", "min":"1000", "max":"1423"},
+			{ "name":"BRUNSON CT"},
+			{ "name":"VICKIE DR"}
+		] },
+		{ "name":"11) Collington Drive (The Cove) Townhomes", "streets": [
+			{ "name":"COLLINGTON DR"}
+		] },
+		{ "name":"12) Seabrook North", "streets": [
+			{ "name":"SEABROOK AVE", "min":"0", "max":"1216"},
+			{ "name":"GRIMSTEAD CIR"},
+			{ "name":"CHESAPEAKE LN"},
+			{ "name":"NEWPORT CIR"},
+			{ "name":"ESTES CT"},
+			{ "name":"DELMAR RD"},
+			{ "name":"RIVERTON PL"},
+			{ "name":"KENBRIDGE LN"},
+			{ "name":"GREENWOOD CIR", "min":"700", "max":"799"}
+		] },
+		{ "name":"13) Maynard / Greenwood Circle", "streets": [
+			{ "name":"MAYNARD RD"},
+			{ "name":"GREENWOOD CIR", "min":"0", "max":"400"},
+			{ "name":"GREENWOOD CIR", "min":"400", "max":"650", "type":"odd"},
+			{ "name":"TANGLEWOOD DR"},
+			{ "name":"BLACKSHOALS DR"},
+			{ "name":"CROWN CT"},
+			{ "name":"NATHANIEL CT"},
+			{ "name":"MEGAN CT"},
+			{ "name":"BONNER CT"},
+			{ "name":"GERRELL CT"},
+			{ "name":"ABRAM DR"},
+			{ "name":"EXETER CT"},
+			{ "name":"SETH CT"}
+		] }
+	]
+}

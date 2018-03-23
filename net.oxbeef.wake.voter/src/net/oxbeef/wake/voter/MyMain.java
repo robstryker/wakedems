@@ -35,6 +35,7 @@ public class MyMain {
 	private String definitionLoc;
 
 	public void run(String command) throws IOException {
+		run(command, ALL_PRECINCTS);
 	}
 
 	public void run(String command, String[] precincts) throws IOException {

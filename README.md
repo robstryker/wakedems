@@ -26,9 +26,9 @@ The general idea is to keep your 'master' branch in-sync with the
 
 Run the following commands to fetch and split the voter records
 
-'cd net.oxbeef.wake.voter/resources/precincts/voters/'
-'chmod +x fetch_voters.sh'
-'./fetch_voters.sh'
+    $ cd net.oxbeef.wake.voter/resources/precincts/voters/
+    $ chmod +x fetch_voters.sh
+    $ ./fetch_voters.sh
 
  
 ## Import the project into eclipse 

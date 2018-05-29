@@ -19,4 +19,14 @@ public class Residence {
 	public int getNumVoters() {
 		return voters.size();
 	}
+	
+	@Override
+	public boolean equals(Object other) {
+		return other instanceof Residence && addr.equals(((Residence)other).addr);
+	}
+	
+	@Override
+	public int hashCode() {
+		return addr.hashCode();
+	}
 }

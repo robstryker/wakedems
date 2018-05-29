@@ -11,9 +11,12 @@ import net.oxbeef.wake.voter.model.precinct.IPrecinctSubdivision;
 
 public class StandardOutput implements IOutputFormat {
 
+	public StandardOutput() {
+	}
+
 	@Override
 	public void beginSubdivision(IPrecinct p, IPrecinctSubdivision sd) {
-		System.out.println(sd.getName());
+		System.out.println("\n\n\n" + sd.getName());
 	}
 
 	@Override
@@ -24,9 +27,14 @@ public class StandardOutput implements IOutputFormat {
 		Voter v3 = null;
 		while(lit.hasNext()) {
 			v3 = lit.next();
-			printVoter(v3);
+			printVoterInternal(v3);
 		}
 	}
+	
+	protected void printVoterInternal(Voter v) {
+		printVoter(v);
+	}
+	
 	public static void printVoter(Voter voter) {
 		String n = voter.getName();
 		String fullStreet = voter.getFullStreetAddress();

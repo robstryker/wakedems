@@ -129,4 +129,20 @@ public class VoterUtility {
     public static String padRight(String s, int n) {
         return String.format("%1$-" + n + "s", s);  
    }
+    
+    public static List<Voter> findDemVoters(Residence r) {
+    	List<Voter> all = new ArrayList<Voter>(r.getVoters());
+    	Iterator<Voter> it = all.iterator();
+    	while(it.hasNext()) {
+    		Voter v = it.next();
+    		if( !v.getParty().equalsIgnoreCase("dem")) {
+    			it.remove();
+    		}
+    	}
+    	return all;
+    }
+    
+    public static boolean residenceHasDems(Residence r) {
+    	return findDemVoters(r).size() > 0;
+    }
 }

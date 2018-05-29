@@ -20,7 +20,7 @@ import net.oxbeef.wake.voter.model.precinct.Street;
 
 public class OutputUtilities {
 
-	private static final int MOST_ACTIVE_TO_FIND_PER_SUBDIVISION = 10;
+	private static final int MOST_ACTIVE_TO_FIND_PER_SUBDIVISION = 13;
 	
 	public static void findMostActiveDemHousesBySubdivision(VoterModel vm, IPrecinct precinct, IOutputFormat format) {
 		format.begin(precinct);
@@ -44,10 +44,43 @@ public class OutputUtilities {
 		format.end(precinct);
 	}
 	
+	public static void findMostActiveDemResidences(VoterModel vm, IPrecinct precinct, IOutputFormat format, int total) {
+		format.begin(precinct);
+		List<Voter> all = vm.getAll();
+		HashMap<String, List<Voter>> allByResidence = VoterUtility.votersByResidence(all);
+		List<Residence> allResidences = VoterUtility.toResidences(allByResidence);
+		Collections.sort(allResidences, new BestDemocratResidenceComparator());
+		
+		List<Residence> topResidences = allResidences.subList(0,  total);
+		
+		
+		IPrecinctSubdivision[] subs = precinct.getSubdivisions();
+		for( int i = 0; i < subs.length; i++ ) {
+			IPrecinctSubdivision sd = subs[i];
+			format.beginSubdivision(precinct, sd);
+			List<Voter> sdVoters = VoterUtility.findVotersInSubdivision(sd, vm.getAll());
+			HashMap<String, List<Voter>> addresses = VoterUtility.votersByResidence(sdVoters);
+			List<Residence> rs = VoterUtility.toResidences(addresses);
+			Collections.sort(rs, new BestDemocratResidenceComparator());
+			Iterator<Residence> rit = rs.iterator();
+			while(rit.hasNext()) {
+				Residence r3 = rit.next();
+				if( topResidences.contains(r3)) {
+					format.printResidence(precinct, sd, r3);
+				}
+			}
+			format.endSubdivision(precinct, sd);
+		}
+		format.end(precinct);
+	}
+
+	
+	
+	
 	public static void findMostActiveDemHousesBySubdivision(VoterModel vm, IPrecinct precinct) {
 		findMostActiveDemHousesBySubdivision(vm, precinct, new StandardOutput());
 	}
-    
+
     public static void findMissingOrMalformedVoters(VoterModel vm, IPrecinct precinct) {
     	ArrayList<Voter> all = vm.getAll();
     	Iterator<Voter> i = all.iterator();

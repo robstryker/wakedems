@@ -11,12 +11,15 @@ import net.oxbeef.wake.voter.model.VoterRegistryReaderException;
 import net.oxbeef.wake.voter.model.precinct.IPrecinct;
 import net.oxbeef.wake.voter.model.precinct.IPrecinctSubdivision;
 import net.oxbeef.wake.voter.model.precinct.impl.GenericPrecinctLoader;
+import net.oxbeef.wake.voter.model.util.DemsOnlyStandardOutput;
 import net.oxbeef.wake.voter.model.util.HTMLOutput;
 import net.oxbeef.wake.voter.model.util.OutputUtilities;
 import net.oxbeef.wake.voter.model.util.VoterUtility;
 
-public class MyMain {
+public class VoterMain {
 	public static final String COMMAND_CHECK_PRECINCT_INTEGRITY = "checkDataIntegrity";
+	public static final String COMMAND_PRINT_TOP_DEMS_BY_SUBDIV = "printTopDemsBySubdiv";
+	public static final String COMMAND_PRINT_TOP_DEMS_BY_SUBDIV_HTML = "printTopDemsBySubdivHTML";
 	public static final String COMMAND_PRINT_TOP_DEMS = "printTopDems";
 	public static final String COMMAND_PRINT_TOP_DEMS_HTML = "printTopDemsHTML";
 
@@ -28,11 +31,12 @@ public class MyMain {
 			"06-07", "18-03", "18-05", "18-08", "20-05" };
 
 	public static void main(String[] args) throws IOException {
-		new MyMain().run(COMMAND_CHECK_PRECINCT_INTEGRITY, ALL_PRECINCTS);
+		new VoterMain().run(COMMAND_PRINT_TOP_DEMS, new String[] {"04-06"});
 	}
 
 	private String precinctDataLoc;
 	private String definitionLoc;
+	private String templateLoc;
 
 	public void run(String command) throws IOException {
 		run(command, ALL_PRECINCTS);
@@ -43,21 +47,22 @@ public class MyMain {
 		String current = new File(".").getCanonicalPath();
 		precinctDataLoc = current + "/resources/precincts/voters/";
 		definitionLoc = current + "/resources/precincts/definitions/";
+		templateLoc = current + "/resources/templates/";
 
 		if (COMMAND_CHECK_PRECINCT_INTEGRITY.equals(command)) {
 			checkAllPrecinctsQE(precincts);
-		} else if (COMMAND_PRINT_TOP_DEMS.equals(command)) {
+		} else if (COMMAND_PRINT_TOP_DEMS_BY_SUBDIV.equals(command)) {
 			for (int i = 0; i < precincts.length; i++) {
 				IPrecinct precinct = getPrecinct(precincts[i], definitionLoc);
 				if (precinct == null) {
 					System.out.println("Error: Precinct definition does not exist");
 				} else {
 					VoterModel vm = loadVoterModel(precincts[i], precinct);
-					OutputUtilities.findMostActiveDemHousesBySubdivision(vm, precinct);
+					OutputUtilities.findMostActiveDemHousesBySubdivision(vm, precinct, new DemsOnlyStandardOutput());
 				}
 			}
-		} else if (COMMAND_PRINT_TOP_DEMS_HTML.equals(command)) {
-			String templateFile = "/home/rob/apps/eclipse/workspaces/photontest/Voters/resources/templates/StrongDemocratTemplate.txt";
+		} else if (COMMAND_PRINT_TOP_DEMS_BY_SUBDIV_HTML.equals(command)) {
+			String templateFile = templateLoc + "StrongDemocratTemplate.txt";
 			for (int i = 0; i < precincts.length; i++) {
 				IPrecinct precinct = getPrecinct(precincts[i], definitionLoc);
 				if (precinct == null) {
@@ -65,6 +70,27 @@ public class MyMain {
 				} else {
 					VoterModel vm = loadVoterModel(precincts[i], precinct);
 					OutputUtilities.findMostActiveDemHousesBySubdivision(vm, precinct, new HTMLOutput(templateFile));
+				}
+			}
+		} else if (COMMAND_PRINT_TOP_DEMS.equals(command)) {
+			for (int i = 0; i < precincts.length; i++) {
+				IPrecinct precinct = getPrecinct(precincts[i], definitionLoc);
+				if (precinct == null) {
+					System.out.println("Error: Precinct definition does not exist");
+				} else {
+					VoterModel vm = loadVoterModel(precincts[i], precinct);
+					OutputUtilities.findMostActiveDemResidences(vm, precinct, new DemsOnlyStandardOutput(), 400);
+				}
+			}
+		} else if (COMMAND_PRINT_TOP_DEMS_HTML.equals(command)) {
+			String templateFile = templateLoc + "StrongDemocratTemplate.txt";
+			for (int i = 0; i < precincts.length; i++) {
+				IPrecinct precinct = getPrecinct(precincts[i], definitionLoc);
+				if (precinct == null) {
+					System.out.println("Error: Precinct definition does not exist");
+				} else {
+					VoterModel vm = loadVoterModel(precincts[i], precinct);
+					OutputUtilities.findMostActiveDemResidences(vm, precinct, new HTMLOutput(templateFile), 400);
 				}
 			}
 		}

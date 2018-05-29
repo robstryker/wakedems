@@ -1,32 +1,39 @@
 <center>
-   <img src="file:///home/rob/Documents/politics/precinct/04-06/tmp/wakedems.png" height=122 width=133/>
+   <img src="file:///home/rob/Documents/politics/precinct/04-06/tmp/WakeDems_SouthCaryLogo.png" height=122 width=133  align="middle"/>
 </center>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
 
-<h3><center>To the residents of ${ADDR}:</center></h3>
+<h3><center>To the Democrats of ${ADDR}:</center></h3>
+<center><b><font size="-1">
+  Please send an email to wakedems.04.06@gmail.com to get involved!<br/><br/>
+  Don't forget to vote in the primary at Farmington Woods Elementary on May 8th!<br/><br/>
+  Please see  https://www.wakedems.org/our-candidates for candidate information!
+</font></b></center>
 <br/><br/>
 <br/><br/>
 <br/><br/>
-
 <font size="-1">
-My name is Rob Stryker, and I am a volunteer with the Wake County Democrat party, 
-working with precinct ${PRECINCT}. We have identified your home as a strong 
-democratic household based on the party registration and voting records of the 
-residents registered to vote at this address. <br/>
+My name is Rob Stryker, and I am a neighbor and volunteer with the Wake County Democrat party, 
+working with our precinct ${PRECINCT}. We appreciate your home being a strong Democratic voting household, 
+and the Wake County Democratic Party, and Precinct 04-06, would like to thank all of you who are
+registered to vote at this address. <br/><br/>
 
-${RESIDENTS}
-
-Our immediate goal is to split our precinct into ${NUM_SUBDIV} smaller, more manageable communities,
+Our main goal for the next 2 months is to find enough volunteers to <b>help us reach every 
+Democrat in the precinct.</b> There is tremendous energy in today's electorate, and 
+we know that many Democrats would like to get involved, if only they knew where to start. 
+Our immediate plan is to split our precinct into ${NUM_SUBDIV} smaller, more manageable communities,
 and find one or two supporters in each area who are willing to take an active role in the 
-upcoming election season. <br/><br/>
+upcoming election season.<br/><br/>
 
-If you would like to help us organize this precinct further with activities such as 
-canvassing, phone-banking, or voter registration drives, or if you would like 
-to come to one of our monthly meetings to express your opinions on any positions 
-or strategies you'd like to see our precinct, or the Wake County party, take throughout
-the upcoming election season, please contact James Wolf at james.s.wolf2815@gmail.com
+If you would like to help us organize this precinct further, 
+come to one of our monthly meetings to suggest any positions or strategies 
+for a 2018 victory, team up for at least one flyer distribution, 
+or just meet fellow Democrats in our precinct, 
+<b>please contact us at our precinct's email address: wakedems.04.06@gmail.com
+or join our google group at https://groups.google.com/forum/#!forum/wakedems-04-06</b>
 <br/><br/>
 Thanks for your time. 
-<br/>
- - Rob Stryker
+
+<br/> - Rob Stryker<br/><br/><br/>
+<center><b>Paid for by Wake County Democratic Party</b></center>
 </font>

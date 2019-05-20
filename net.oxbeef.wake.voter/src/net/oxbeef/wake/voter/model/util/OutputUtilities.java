@@ -10,19 +10,26 @@ import java.util.List;
 import java.util.Set;
 
 import net.oxbeef.wake.voter.model.Residence;
-import net.oxbeef.wake.voter.model.StreetComparator;
 import net.oxbeef.wake.voter.model.Voter;
 import net.oxbeef.wake.voter.model.VoterModel;
-import net.oxbeef.wake.voter.model.dems.BestDemocratResidenceComparator;
 import net.oxbeef.wake.voter.model.precinct.IPrecinct;
 import net.oxbeef.wake.voter.model.precinct.IPrecinctSubdivision;
 import net.oxbeef.wake.voter.model.precinct.Street;
+import net.oxbeef.wake.voter.model.sort.BestDemocratResidenceComparator;
+import net.oxbeef.wake.voter.model.sort.StreetComparator;
 
 public class OutputUtilities {
 
 	private static final int MOST_ACTIVE_TO_FIND_PER_SUBDIVISION = 13;
 	
 	public static void findMostActiveDemHousesBySubdivision(VoterModel vm, IPrecinct precinct, IOutputFormat format) {
+		findMostActiveDemHousesBySubdivision(vm, precinct, format, MOST_ACTIVE_TO_FIND_PER_SUBDIVISION);
+	}
+	public static void findMostActiveDemHousesBySubdivision(VoterModel vm, IPrecinct precinct, IOutputFormat format, int perSub) {
+		findMostActiveDemHousesBySubdivision(vm, precinct, format, perSub, new BestDemocratResidenceComparator());
+	}
+	
+	public static void findMostActiveDemHousesBySubdivision(VoterModel vm, IPrecinct precinct, IOutputFormat format, int perSub, Comparator<Residence> comp) {
 		format.begin(precinct);
 		IPrecinctSubdivision[] subs = precinct.getSubdivisions();
 		for( int i = 0; i < subs.length; i++ ) {
@@ -31,10 +38,10 @@ public class OutputUtilities {
 			List<Voter> sdVoters = VoterUtility.findVotersInSubdivision(sd, vm.getAll());
 			HashMap<String, List<Voter>> addresses = VoterUtility.votersByResidence(sdVoters);
 			List<Residence> rs = VoterUtility.toResidences(addresses);
-			Collections.sort(rs, new BestDemocratResidenceComparator());
+			Collections.sort(rs, comp);
 			Iterator<Residence> rit = rs.iterator();
 			int c = 0;
-			while(rit.hasNext() && c < MOST_ACTIVE_TO_FIND_PER_SUBDIVISION) {
+			while(rit.hasNext() && c < perSub) {
 				Residence r3 = rit.next();
 				format.printResidence(precinct, sd, r3);
 				c++;
@@ -74,13 +81,6 @@ public class OutputUtilities {
 		format.end(precinct);
 	}
 
-	
-	
-	
-	public static void findMostActiveDemHousesBySubdivision(VoterModel vm, IPrecinct precinct) {
-		findMostActiveDemHousesBySubdivision(vm, precinct, new StandardOutput());
-	}
-
     public static void findMissingOrMalformedVoters(VoterModel vm, IPrecinct precinct) {
     	ArrayList<Voter> all = vm.getAll();
     	Iterator<Voter> i = all.iterator();
@@ -88,6 +88,9 @@ public class OutputUtilities {
     	ArrayList<Voter> wrong = new ArrayList<Voter>();
     	while(i.hasNext()) {
     		v = i.next();
+    		if( v.getName().toLowerCase().contains("calub")) {
+    			System.out.println("Break");
+    		}
     		List<IPrecinctSubdivision> subs = VoterUtility.findSubdivisionsForVoter(precinct, v);
     		if( subs.size() != 1 ) {
     			wrong.add(v);

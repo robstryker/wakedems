@@ -1,5 +1,7 @@
-package net.oxbeef.wake.voter.model;
+package net.oxbeef.wake.voter.model.sort;
 import java.util.Comparator;
+
+import net.oxbeef.wake.voter.model.Voter;
 
 public class StreetComparator implements Comparator<Voter> {
 	@Override

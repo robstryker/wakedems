@@ -2,6 +2,7 @@ package net.oxbeef.wake.voter.model.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -96,6 +97,26 @@ public class VoterUtility {
     	}
     	return ret;
 	}	
+
+	public static void sortResidenceByStreetAndNumber(List<Residence> list) {
+		list.sort(new Comparator<Residence>() {
+			@Override
+			public int compare(Residence o1, Residence o2) {
+				String addr1 = o1.getAddr().trim();
+				String addr2 = o2.getAddr().trim();
+				int firstSpace1 = addr1.indexOf(' ');
+				int firstSpace2 = addr2.indexOf(' ');
+				String street1 = addr1.substring(firstSpace1+1);
+				String street2 = addr2.substring(firstSpace2+1);
+				if( !street1.equals(street2)) {
+					return street1.compareTo(street2);
+				}
+				String num1 = addr1.substring(0, firstSpace1).trim();
+				String num2 = addr2.substring(0, firstSpace2).trim();
+				return Integer.parseInt(num1) - Integer.parseInt(num2);
+			}
+		});
+	}
 	
 	public static List<Voter> findVotersOnStreet(String street, List<Voter> voters) {
     	Iterator<Voter> i = voters.iterator();

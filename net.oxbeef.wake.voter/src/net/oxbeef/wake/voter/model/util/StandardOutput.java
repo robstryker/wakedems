@@ -3,11 +3,12 @@ package net.oxbeef.wake.voter.model.util;
 import java.util.Iterator;
 import java.util.List;
 
+import net.oxbeef.wake.voter.FindActiveDemsMain2.RosterWeightedDemResidenceComparator;
 import net.oxbeef.wake.voter.model.Residence;
 import net.oxbeef.wake.voter.model.Voter;
-import net.oxbeef.wake.voter.model.dems.BestDemocratResidenceComparator;
 import net.oxbeef.wake.voter.model.precinct.IPrecinct;
 import net.oxbeef.wake.voter.model.precinct.IPrecinctSubdivision;
+import net.oxbeef.wake.voter.model.sort.BestDemocratResidenceComparator;
 
 public class StandardOutput implements IOutputFormat {
 
@@ -21,7 +22,7 @@ public class StandardOutput implements IOutputFormat {
 
 	@Override
 	public void printResidence(IPrecinct p, IPrecinctSubdivision sd, Residence r) {
-		System.out.println(" - " + r.getAddr() + ",   Score=" + new BestDemocratResidenceComparator().getScore(r));
+		System.out.println(" - " + r.getAddr() + ",   Score=" + getComparator().getScore(r));
 		List<Voter> l = r.getVoters();
 		Iterator<Voter> lit = l.iterator();
 		Voter v3 = null;
@@ -29,6 +30,10 @@ public class StandardOutput implements IOutputFormat {
 			v3 = lit.next();
 			printVoterInternal(v3);
 		}
+	}
+	
+	private BestDemocratResidenceComparator getComparator() {
+		return new RosterWeightedDemResidenceComparator();
 	}
 	
 	protected void printVoterInternal(Voter v) {

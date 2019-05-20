@@ -1,4 +1,4 @@
-package net.oxbeef.wake.voter.model.dems;
+package net.oxbeef.wake.voter.model.sort;
 
 import java.util.Comparator;
 import java.util.Iterator;

@@ -64,7 +64,7 @@
 			{ "name":"HERTFORDSHIRE CT"},
 			{ "name":"HALESWORTH DR"}
 		] },
-		{ "name":"8a) Wimbledon West", "streets": [
+		{ "name":"8) Wimbledon West", "streets": [
 			{ "name":"COVENTRY LN"},
 			{ "name":"KETTERING LN"},
 			{ "name":"DRYSDALE CT"},
@@ -77,7 +77,7 @@
 			{ "name":"WESTPORT DR"},
 			{ "name":"MCENROE CIR"}
 		] },
-		{ "name":"8b) Wimbledon SouthWest", "streets": [
+		{ "name":"9) Wimbledon SouthWest", "streets": [
 			{ "name":"CABERNET CIR"},
 			{ "name":"EVERT DR"},
 			{ "name":"TIMBER VIEW LN"},
@@ -90,7 +90,7 @@
 			{ "name":"COCHET CT"},
 			{ "name":"SEDGMAN CT"}
 		] },
-		{ "name":"9) Wimbledon East", "streets": [
+		{ "name":"10) Wimbledon East", "streets": [
 			{ "name":"COORSDALE DR", "min":"300"},
 			{ "name":"WILANDER DR"},
 			{ "name":"WIGHTMAN CT"},
@@ -100,16 +100,16 @@
 			{ "name":"CHRISTENBURY LN"},
 			{ "name":"AGASSI CT"}
 		] },
-		{ "name":"10) Waltonwood Retirement", "streets": [
+		{ "name":"11) Waltonwood Retirement", "streets": [
 			{ "name":"KIRKSHIRE CIR"},
 			{ "name":"CARY PKWY", "min":"740", "max":"760"}
 		] },
-		{ "name":"11) Spring Arbor Assisted Living", "streets": [
+		{ "name":"12) Spring Arbor Assisted Living", "streets": [
 			{ "name":"KILDAIRE FARM RD", "min":"1705", "max":"1705"},
 			{ "name":"SPRINGHURST LN"},
 			{ "name":"SPRING FLOWER CT"}
 		] },
-		{ "name":"12) Seabrook North (Farren Forrest + MacDonalds Woods)", "streets": [
+		{ "name":"13) Seabrook North (Farren Forrest + MacDonalds Woods)", "streets": [
 			{ "name":"BRANNIGAN PL"},
 			{ "name":"FARREN CT"},
 			{ "name":"TULLIALLAN LN"},
@@ -118,22 +118,18 @@
 			{ "name":"DUNHAGAN PL", "min":"0", "max":"299"},
 			{ "name":"SEABROOK AVE"}
 		] },
-		{ "name":"13) Seabrook South (MacDonalds Woods, pepperdine, etc", "streets": [
+		{ "name":"14) Seabrook South (MacDonalds Woods, pepperdine, etc", "streets": [
 			{ "name":"HEIDINGER DR"},
 			{ "name":"AKIRY CT"},
 			{ "name":"DUNHAGAN PL", "min":"300"},
 			{ "name":"COORSDALE DR", "max":"299"}
 		] },
-		{ "name":"14) Ponderosa", "streets": [
+		{ "name":"15) Tryon North", "streets": [
 			{ "name":"GUERNSEY TRL"},
 			{ "name":"KEISLER DR"},
-			{ "name":"HEREFORD LN"}
-		] },
-		{ "name":"15) Thornewood", "streets": [
+			{ "name":"HEREFORD LN"},
 			{ "name":"THORNEWOOD DR"},
-			{ "name":"WAXWOOD LN"}
-		] },
-		{ "name":"16) Larkwood Ln + Cary Health and Rehabilitation ", "streets": [
+			{ "name":"WAXWOOD LN"},
 			{ "name":"DEWBERRY CT"},
 			{ "name":"LARKWOOD LN"},
 			{ "name":"FROSTWOOD DR"},

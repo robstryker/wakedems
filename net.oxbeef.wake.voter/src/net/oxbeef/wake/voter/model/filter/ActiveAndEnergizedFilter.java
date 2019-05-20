@@ -1,4 +1,4 @@
-package net.oxbeef.wake.voter.model.dems;
+package net.oxbeef.wake.voter.model.filter;
 
 import net.oxbeef.wake.voter.model.IVoterFilter;
 import net.oxbeef.wake.voter.model.Voter;

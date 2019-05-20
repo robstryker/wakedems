@@ -60,6 +60,8 @@ public class Voter {
     			} else {
     				sb.append("X");
     			}
+			} else {
+				sb.append("X");
 			}
 		}
 		return sb.toString();

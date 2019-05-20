@@ -14,8 +14,8 @@
 <br/><br/>
 <font size="-1">
 My name is Rob Stryker, and I am a neighbor and volunteer with the Wake County Democrat party, 
-working with our precinct ${PRECINCT}. We appreciate your home being a strong Democratic voting household, 
-and the Wake County Democratic Party, and Precinct 04-06, would like to thank all of you who are
+working with our precinct ${PRECINCT}. We appreciate your home being a strong Democratic voting household. 
+The Wake County Democratic Party, and Precinct 04-06, would like to thank all of you who are
 registered to vote at this address. <br/><br/>
 
 Our main goal for the next 2 months is to find enough volunteers to <b>help us reach every 

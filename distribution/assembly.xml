@@ -11,7 +11,19 @@
           <outputDirectory>wakeVoter/resources</outputDirectory>
           <includes>
 	    <include>**/*</include>
-          </includes>
+  	</includes>
+	<excludes>
+	   <exclude>precincts/voters/*.csv</exclude>
+	   <exclude>precincts/voters/*.zip</exclude>
+	   <exclude>precincts/voters/*.xlsx</exclude>
+	</excludes>
+        </fileSet>
+        <fileSet>
+	  <directory>${project.basedir}/scripts/</directory>
+          <outputDirectory>wakeVoter/bin</outputDirectory>
+          <includes>
+	    <include>**/*</include>
+  	</includes>
         </fileSet>
         <fileSet>
 	  <directory>${project.build.directory}/wakeVoter</directory>

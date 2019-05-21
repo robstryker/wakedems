@@ -51,4 +51,17 @@ public class PrecinctCore {
 			return null;
 		}
 	}
+
+	public static VoterModel loadVoterModel(File precinctCSV) {
+		// The name of the file to open.
+		VoterRegistryReader reader = new VoterRegistryReader(precinctCSV);
+		VoterModel vm = null;
+		try {
+			vm = reader.load(null);
+			return vm;
+		} catch (VoterRegistryReaderException vrre) {
+			vrre.printStackTrace();
+			return null;
+		}
+	}
 }

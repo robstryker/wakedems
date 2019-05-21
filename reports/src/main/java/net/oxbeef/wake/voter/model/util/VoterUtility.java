@@ -2,18 +2,20 @@ package net.oxbeef.wake.voter.model.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import net.oxbeef.wake.voter.model.Residence;
 import net.oxbeef.wake.voter.model.Voter;
 import net.oxbeef.wake.voter.model.precinct.IPrecinct;
 import net.oxbeef.wake.voter.model.precinct.IPrecinctSubdivision;
-import net.oxbeef.wake.voter.model.precinct.Street;
+import net.oxbeef.wake.voter.model.precinct.SubdivisionStreet;
 
 public class VoterUtility {
 	
@@ -64,7 +66,7 @@ public class VoterUtility {
 
 	
 	public static List<Voter> findVotersInSubdivision(IPrecinctSubdivision sd, List<Voter> voters) {
-		Street[] streets = sd.getStreets();
+		SubdivisionStreet[] streets = sd.getStreets();
 		Set<Voter> ret = new HashSet<Voter>();
 		for( int i = 0; i < streets.length; i++ ) {
 			ret.addAll(findVotersOnStreet(streets[i], voters));
@@ -73,7 +75,7 @@ public class VoterUtility {
 	}
 	
 	
-	public static List<Voter> findVotersOnStreet(Street s, List<Voter> voters) {
+	public static List<Voter> findVotersOnStreet(SubdivisionStreet s, List<Voter> voters) {
 		String street = s.getName();
     	Iterator<Voter> i = voters.iterator();
     	Voter v = null;
@@ -83,12 +85,12 @@ public class VoterUtility {
     		if( v.getStreet().equalsIgnoreCase(street)) {
     			int num = v.getStreetNumberInt();
     			if( num <= s.getMax() && num >= s.getMin()) {
-    				if( s.getType() == Street.TYPE_ALL) { 
+    				if( s.getType() == SubdivisionStreet.TYPE_ALL) { 
     					ret.add(v);
-    				} else if( s.getType() == Street.TYPE_EVEN) {
+    				} else if( s.getType() == SubdivisionStreet.TYPE_EVEN) {
     					if( num % 2 == 0 ) 
     						ret.add(v);
-    				} else if( s.getType() == Street.TYPE_ODD) {
+    				} else if( s.getType() == SubdivisionStreet.TYPE_ODD) {
     					if( num % 2 != 0 )
     						ret.add(v);
     				}
@@ -166,4 +168,50 @@ public class VoterUtility {
     public static boolean residenceHasDems(Residence r) {
     	return findDemVoters(r).size() > 0;
     }
+    
+    public static Map<String, List<Voter>> getVotersByStreet(List<Voter> voters) {
+    	HashMap<String, List<Voter>> ret = new HashMap<>();
+    	for( Voter v : voters ) {
+    		String street = v.getStreet();
+    		List<Voter> streetList = ret.get(street);
+    		if( streetList == null ) {
+    			streetList = new ArrayList<Voter>();
+    			ret.put(street,  streetList);
+    		}
+    		streetList.add(v);
+    	}
+    	return ret;
+    }
+    
+    public static List<String> getUniqueParties(List<Voter> voters) {
+    	ArrayList<String> parties = new ArrayList<String>();
+    	for( Voter v : voters ) {
+    		if( !parties.contains(v.getParty())) {
+    			parties.add(v.getParty());
+    		}
+    	}
+    	return parties;
+    }
+    
+    public static List<Voter> getVotersOfParty(List<Voter> all, String party) {
+    	ArrayList<Voter> ret = new ArrayList<Voter>();
+    	for( Voter v : all) {
+    		if( v.getParty().equals(party)) {
+    			ret.add(v);
+    		}
+    	}
+    	return ret;
+    }
+    
+	public static String partisanInformation(List<Voter> list) {
+		StringBuffer sb = new StringBuffer();
+		List<String> parties = VoterUtility.getUniqueParties(list);
+		Collections.sort(parties);
+		for( String party : parties ) {
+			List<Voter> fromParty = VoterUtility.getVotersOfParty(list, party);
+			sb.append(party + "=" + fromParty.size() + " ");
+		}
+		sb.append("\n");
+		return sb.toString();
+	}
 }

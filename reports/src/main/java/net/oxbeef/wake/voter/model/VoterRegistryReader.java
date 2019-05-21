@@ -47,7 +47,7 @@ public class VoterRegistryReader {
 
 			while ((line = bufferedReader.readLine()) != null) {
 				Voter v = new Voter(line);
-				if( filter == null || filter.accepts(v)) {
+				if( isValid(v) && (filter == null || filter.accepts(v))) {
 					all.add(v);
 					if (v.getParty().equals("DEM")) {
 						dems.add(v);
@@ -76,4 +76,13 @@ public class VoterRegistryReader {
 		}
 	}
 
+	private boolean isValid(Voter v) {
+		// Try to detect errors in the csv file
+		try {
+			int i = v.getAgeInt();
+		} catch(NumberFormatException nfe) {
+			return false;
+		}
+		return true;
+	}
 }

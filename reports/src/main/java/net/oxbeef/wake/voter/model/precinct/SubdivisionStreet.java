@@ -1,6 +1,6 @@
 package net.oxbeef.wake.voter.model.precinct;
 
-public class Street {
+public class SubdivisionStreet {
 	private String name;
 	private int min = Integer.MIN_VALUE;
 	private int max = Integer.MAX_VALUE;
@@ -11,16 +11,16 @@ public class Street {
 	
 	
 	
-	public Street(String name) {
+	public SubdivisionStreet(String name) {
 		this(name, Integer.MIN_VALUE, Integer.MAX_VALUE);
 	}
-	public Street(String name, int type) {
+	public SubdivisionStreet(String name, int type) {
 		this(name, Integer.MIN_VALUE, Integer.MAX_VALUE, type);
 	}
-	public Street(String name, int min, int max) {
+	public SubdivisionStreet(String name, int min, int max) {
 		this(name, min, max, TYPE_ALL);
 	}
-	public Street(String name, int min, int max, int type) {
+	public SubdivisionStreet(String name, int min, int max, int type) {
 		this.name = name;
 		this.min = min;
 		this.max = max;

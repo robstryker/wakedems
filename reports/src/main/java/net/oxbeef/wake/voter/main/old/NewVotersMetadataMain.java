@@ -13,6 +13,7 @@ import net.oxbeef.wake.voter.model.VoterModel;
 import net.oxbeef.wake.voter.model.VoterRegistryReader;
 import net.oxbeef.wake.voter.model.VoterRegistryReaderException;
 import net.oxbeef.wake.voter.model.filter.RecentlyRegisteredFilter;
+import net.oxbeef.wake.voter.model.util.StatisticsUtil;
 
 public class NewVotersMetadataMain {
 
@@ -174,37 +175,15 @@ public class NewVotersMetadataMain {
 	}
 
 	private double getAverageAge(List<Voter> voters) {
-		double total = 0;
-		for( Voter v : voters ) {
-			total += v.getAgeInt();
-		}
-		return total / voters.size();
+		return StatisticsUtil.getAverageAge(voters);
 	}
 
 	private double getMedianAge(List<Voter> voters) {
-		ArrayList<Voter> tmp = new ArrayList<Voter>(voters);
-		Collections.sort(tmp, new Comparator<Voter>() {
-			@Override
-			public int compare(Voter o1, Voter o2) {
-				return o1.getAgeInt() - o2.getAgeInt();
-			}
-		});
-		int midIndex = voters.size() / 2;
-		return tmp.get(midIndex).getAgeInt();
+		return StatisticsUtil.getMedianAge(voters);
 	}
 
 	private double getAgeStdev(List<Voter> voters) {
-		double total = 0;
-		for( Voter v : voters ) {
-			total += v.getAgeInt();
-		}
-		double mean = total / voters.size();
-		double total2 = 0;
-		for( Voter v : voters ) {
-			total2 += (v.getAgeInt() - mean) * (v.getAgeInt() - mean);
-		}
-		double mean2 = total2 / voters.size();
-		return Math.sqrt(mean2);
+		return StatisticsUtil.getAgeStdev(voters);
 	}
 
 	private List<Voter> getAllDems(List<PrecinctSummary> l) {

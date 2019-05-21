@@ -13,7 +13,7 @@ import net.oxbeef.wake.voter.model.precinct.AbstractPrecinct;
 import net.oxbeef.wake.voter.model.precinct.IPrecinct;
 import net.oxbeef.wake.voter.model.precinct.IPrecinctSubdivision;
 import net.oxbeef.wake.voter.model.precinct.PrecinctSubdivision;
-import net.oxbeef.wake.voter.model.precinct.Street;
+import net.oxbeef.wake.voter.model.precinct.SubdivisionStreet;
 
 public class GenericPrecinctLoader {
 	private String definitionLoc;
@@ -80,10 +80,10 @@ public class GenericPrecinctLoader {
 
 		private int typeToInt(String type) {
 			if( type.equalsIgnoreCase("even"))
-				return Street.TYPE_EVEN;
+				return SubdivisionStreet.TYPE_EVEN;
 			if( type.equalsIgnoreCase("odd"))
-				return Street.TYPE_ODD;
-			return Street.TYPE_ALL;
+				return SubdivisionStreet.TYPE_ODD;
+			return SubdivisionStreet.TYPE_ALL;
 			
 		}
 	}

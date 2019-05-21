@@ -1,5 +1,7 @@
 package net.oxbeef.wake.voter;
 
+import java.io.IOException;
+
 import net.oxbeef.wake.voter.main.VoterMain;
 
 /**
@@ -7,7 +9,7 @@ import net.oxbeef.wake.voter.main.VoterMain;
  *
  */
 public class App {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		VoterMain.main(args);
 	}
 }

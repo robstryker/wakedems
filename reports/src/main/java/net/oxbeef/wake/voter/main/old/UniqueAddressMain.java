@@ -15,7 +15,6 @@ import net.oxbeef.wake.voter.model.precinct.PrecinctCore;
 import net.oxbeef.wake.voter.model.sort.BestDemocratResidenceComparator;
 import net.oxbeef.wake.voter.model.util.DemsOnlyStandardOutput;
 import net.oxbeef.wake.voter.model.util.IOutputFormat;
-import net.oxbeef.wake.voter.model.util.OutputUtilities;
 import net.oxbeef.wake.voter.model.util.VoterUtility;
 
 public class UniqueAddressMain {
@@ -42,15 +41,9 @@ public class UniqueAddressMain {
 	public void run(String[] precincts) throws IOException {
 
 		String current = new File(".").getCanonicalPath();
-		precinctDataLoc = current + "/resources/precincts/voters/";
-		definitionLoc = current + "/resources/precincts/definitions/";
-		templateLoc = current + "/resources/templates/";
-		
-		String bySub1 = System.getProperty(PROP_BY_SUBDIVISION);
-		boolean bySubdivision = (bySub1 == null ? true : Boolean.parseBoolean(bySub1));
-		String count1 = System.getProperty(PROP_COUNT);
-		int defaultCount = 400;//(bySubdivision ? 20 : 400);
-		int count = (count1 == null ? defaultCount : Integer.parseInt(count1));
+		precinctDataLoc = current + "/../resources/precincts/voters/";
+		definitionLoc = current + "/../resources/precincts/definitions/";
+		templateLoc = current + "/../resources/templates/";
 		
 		
 		for (int i = 0; i < precincts.length; i++) {

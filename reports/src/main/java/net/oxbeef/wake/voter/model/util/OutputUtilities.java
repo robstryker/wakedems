@@ -14,7 +14,7 @@ import net.oxbeef.wake.voter.model.Voter;
 import net.oxbeef.wake.voter.model.VoterModel;
 import net.oxbeef.wake.voter.model.precinct.IPrecinct;
 import net.oxbeef.wake.voter.model.precinct.IPrecinctSubdivision;
-import net.oxbeef.wake.voter.model.precinct.Street;
+import net.oxbeef.wake.voter.model.precinct.SubdivisionStreet;
 import net.oxbeef.wake.voter.model.sort.BestDemocratResidenceComparator;
 import net.oxbeef.wake.voter.model.sort.StreetComparator;
 
@@ -124,9 +124,9 @@ public class OutputUtilities {
     	IPrecinctSubdivision[] subs = precinct.getSubdivisions();
     	for( int i = 0; i < subs.length; i++ ) {
     		System.out.println(subs[i].getName());
-    		Street[] streets = subs[i].getStreets();
+    		SubdivisionStreet[] streets = subs[i].getStreets();
     		for( int j = 0; j < streets.length; j++ ) {
-    			Street s = streets[j];
+    			SubdivisionStreet s = streets[j];
             	printStreet(s, dems, reps, other, all);
     		}
         	System.out.println("\n\n");
@@ -154,7 +154,7 @@ public class OutputUtilities {
         }
 	}
 
-	public static void printStreet(Street s, ArrayList<Voter> dems, ArrayList<Voter> reps, ArrayList<Voter> other, ArrayList<Voter> all) {
+	public static void printStreet(SubdivisionStreet s, ArrayList<Voter> dems, ArrayList<Voter> reps, ArrayList<Voter> other, ArrayList<Voter> all) {
     	List<Voter> demStreet, repStreet, otherStreet, allStreet;
     	demStreet = VoterUtility.findVotersOnStreet(s, dems);
     	repStreet = VoterUtility.findVotersOnStreet(s, reps);
@@ -227,7 +227,7 @@ public class OutputUtilities {
     		suffix = ( i == sds.length - 1 ) ? "" : ",";
     		System.out.println("\t\t{ \"name\":\"" + sds[i].getName() + "\", \"streets\": [");
     		
-    		Street[] streets = sds[i].getStreets();
+    		SubdivisionStreet[] streets = sds[i].getStreets();
     		String suffix2 = null;
     		for( int j = 0; j < streets.length; j++ ) {
     			suffix2 = ( j == streets.length - 1 ) ? "" : ",";
@@ -252,11 +252,11 @@ public class OutputUtilities {
     			}
     			
     			int type = streets[j].getType();
-    			if( type != Street.TYPE_ALL) {
+    			if( type != SubdivisionStreet.TYPE_ALL) {
 	    			String typeString = null;
-	    			if( type == Street.TYPE_EVEN)
+	    			if( type == SubdivisionStreet.TYPE_EVEN)
 	    				typeString = "even";
-	    			else if( type == Street.TYPE_ODD)
+	    			else if( type == SubdivisionStreet.TYPE_ODD)
 	    				typeString = "odd";
 	    			else 
 	    				typeString = "all";

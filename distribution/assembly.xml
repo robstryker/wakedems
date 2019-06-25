@@ -16,6 +16,7 @@
 	   <exclude>precincts/voters/*.csv</exclude>
 	   <exclude>precincts/voters/*.zip</exclude>
 	   <exclude>precincts/voters/*.xlsx</exclude>
+	   <exclude>precincts/maps/**/*</exclude>
 	</excludes>
         </fileSet>
         <fileSet>

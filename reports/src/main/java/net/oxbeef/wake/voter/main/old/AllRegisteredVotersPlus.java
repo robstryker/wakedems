@@ -80,9 +80,9 @@ public class AllRegisteredVotersPlus {
 		
 		
 		String current = new File(".").getCanonicalPath();
-		precinctDataLoc = current + "/resources/precincts/voters/";
-		definitionLoc = current + "/resources/precincts/definitions/";
-		templateLoc = current + "/resources/templates/";
+		precinctDataLoc = current + "/..//resources/precincts/voters/";
+		definitionLoc = current + "/..//resources/precincts/definitions/";
+		templateLoc = current + "/..//resources/templates/";
 		for( int i = 0; i < precincts.length; i++ ) {
 			IPrecinct precinct = getPrecinct(precincts[i], definitionLoc);
 			VoterModel vm = loadVoterModel(precincts[i], precinct);

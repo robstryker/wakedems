@@ -2,7 +2,6 @@ package net.oxbeef.wake.voter.model.sort;
 import java.util.Comparator;
 
 import net.oxbeef.wake.voter.model.Residence;
-import net.oxbeef.wake.voter.model.Voter;
 
 public class ResidenceComparator implements Comparator<Residence> {
 	@Override
@@ -10,7 +9,7 @@ public class ResidenceComparator implements Comparator<Residence> {
 		String addr1 = o1.getAddr();
 		String addr2 = o2.getAddr();
 		String addr1Prefix = addr1.substring(0, addr1.indexOf(" ")).trim();
-		String addr2Prefix = addr2.substring(0, addr1.indexOf(" ")).trim();
+		String addr2Prefix = addr2.substring(0, addr2.indexOf(" ")).trim();
 		String addr1Suffix = addr1.substring(addr1Prefix.length()+1).trim();
 		String addr2Suffix = addr2.substring(addr2Prefix.length()+1).trim();
 		int ret;

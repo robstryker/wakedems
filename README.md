@@ -2,7 +2,7 @@
 
 ## Summary
 
-Java program to help parse voter records and discover likely contributors.
+Java program + bash script to help parse voter records and discover likely contributors.
 
 ## Get the code
 
@@ -22,13 +22,20 @@ At any time, you can pull changes from the upstream and merge them onto your mas
 The general idea is to keep your 'master' branch in-sync with the
 'upstream/master'.
 
-## Before Running
+## Building
+Run the following commands to build a distribution
 
-Run the following commands to fetch and split the voter records
+    $ cd wakedems
+    $ mvn clean install
 
-    $ cd net.oxbeef.wake.voter/resources/precincts/voters/
-    $ chmod +x fetch_voters.sh
-    $ ./fetch_voters.sh
+## Running / using the distribution
+Run the following commands to extract, browse, and use the distribution
+
+    $ cd distribution/target/
+    $ unzip wake.voter.reports.distribution-0.1.0-SNAPSHOT-bin.zip
+    $ cd wake.voter.reports.distribution-0.1.0-SNAPSHOT/wakeVoter/bin
+    $ ./downloadData.sh
+    $ ./runAllReports.sh
 
  
 ## Import the project into eclipse 

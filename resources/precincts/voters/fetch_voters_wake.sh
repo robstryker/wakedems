@@ -1,4 +1,5 @@
 #!/bin/sh
+cd current
 wget http://msweb03.co.wake.nc.us/bordelec/downloads/data/vrdb.zip
 unzip vrdb.zip
 for fn in `ls -1 *.xlsx`; do
@@ -14,5 +15,4 @@ for csvfile in `ls -1 *.database.csv`; do
       cat $csvfile | grep $fn > $fn.csv
    done
 done
-
-
+cd ../

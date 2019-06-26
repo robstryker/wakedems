@@ -4,19 +4,17 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 
 import net.oxbeef.wake.voter.model.IVoterFilter;
 import net.oxbeef.wake.voter.model.Voter;
 import net.oxbeef.wake.voter.model.VoterModel;
+import net.oxbeef.wake.voter.model.data.source.ExternalDataSource;
 import net.oxbeef.wake.voter.model.filter.RecentlyRegisteredFilter;
 import net.oxbeef.wake.voter.model.precinct.IPrecinct;
 import net.oxbeef.wake.voter.model.precinct.IPrecinctSubdivision;
 import net.oxbeef.wake.voter.model.precinct.PrecinctCore;
-import net.oxbeef.wake.voter.model.sort.RegistrationDateComparartor;
 import net.oxbeef.wake.voter.model.sort.VoterAddressComparator;
 import net.oxbeef.wake.voter.model.util.StatisticsUtil;
 import net.oxbeef.wake.voter.model.util.VoterUtility;
@@ -31,9 +29,8 @@ public class NewlyRegisteredVotersReport {
 
 	public String run() throws IOException {
 
-		String current = new File(".").getCanonicalPath();
-		String precinctDataLoc = current + "/../resources/precincts/voters/";
-		String definitionLoc = current + "/../resources/precincts/definitions/";
+		String precinctDataLoc = ExternalDataSource.getInstance().getPrecinctDataLoc();
+		String definitionLoc = ExternalDataSource.getInstance().getDefinitionLoc();
 
 		IPrecinct precinct = getPrecinct(precinctId, definitionLoc);
 		VoterModel vm = null;
@@ -145,13 +142,13 @@ public class NewlyRegisteredVotersReport {
 	}
 
 	private VoterModel loadVoterModel(String precinctId, String precinctDataLoc) {
-		String fileName = precinctDataLoc + precinctId + ".csv";
+		String fileName = precinctDataLoc + precinctId + ".tsv";
 		return PrecinctCore.loadVoterModel(new File(fileName));
 	}
 	
 	private VoterModel loadVoterModel(String precinctId, IPrecinct precinct, String precinctDataLoc) {
 		// The name of the file to open.
-		String fileName = precinctDataLoc + precinctId + ".csv";
+		String fileName = precinctDataLoc + precinctId + ".tsv";
 		return PrecinctCore.loadVoterModel(new File(fileName), precinct);
 	}
 

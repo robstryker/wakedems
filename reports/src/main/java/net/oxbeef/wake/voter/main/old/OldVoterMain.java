@@ -35,29 +35,7 @@ public class OldVoterMain {
 
 		if (COMMAND_CHECK_PRECINCT_INTEGRITY.equals(command)) {
 			checkAllPrecinctsQE(precincts);
-		} else if (COMMAND_PRINT_TOP_DEMS_BY_SUBDIV_HTML.equals(command)) {
-			String templateFile = templateLoc + "04-06-template1.txt";
-			for (int i = 0; i < precincts.length; i++) {
-				IPrecinct precinct = getPrecinct(precincts[i], definitionLoc);
-				if (precinct == null) {
-					System.out.println("Error: Precinct definition does not exist");
-				} else {
-					VoterModel vm = loadVoterModel(precincts[i], precinct);
-					OutputUtilities.findMostActiveDemHousesBySubdivision(vm, precinct, new HTMLOutput(templateFile));
-				}
-			}
-		} else if (COMMAND_PRINT_TOP_DEMS_HTML.equals(command)) {
-			String templateFile = templateLoc + "StrongDemocratTemplate.txt";
-			for (int i = 0; i < precincts.length; i++) {
-				IPrecinct precinct = getPrecinct(precincts[i], definitionLoc);
-				if (precinct == null) {
-					System.out.println("Error: Precinct definition does not exist");
-				} else {
-					VoterModel vm = loadVoterModel(precincts[i], precinct);
-					OutputUtilities.findMostActiveDemResidences(vm, precinct, new HTMLOutput(templateFile), 400);
-				}
-			}
-		}
+		} 
 	}
 
 	private void checkAllPrecinctsQE(String[] precincts) {
@@ -78,7 +56,7 @@ public class OldVoterMain {
 
 	private VoterModel loadVoterModel(String precinctId, IPrecinct precinct) {
 		// The name of the file to open.
-		String fileName = precinctDataLoc + precinctId + ".csv";
+		String fileName = precinctDataLoc + precinctId + ".tsv";
 		return PrecinctCore.loadVoterModel(new File(fileName), precinct);
 	}
 

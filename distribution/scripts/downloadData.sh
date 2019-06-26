@@ -1,6 +1,10 @@
 #!/bin/sh
 cd ../resources/precincts/voters/
-rm *.csv *.zip *.xlsx 
-./fetch_voters.sh
+rm current/* 
+./fetch_ncboe.sh
 cd ../../../bin
+
+cd ../resources/partyChange/
+./fetchPartyChange.sh
+cd ../../bin
 

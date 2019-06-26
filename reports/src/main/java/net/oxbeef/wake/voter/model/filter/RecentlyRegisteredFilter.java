@@ -9,7 +9,8 @@ import net.oxbeef.wake.voter.model.Voter;
 
 public class RecentlyRegisteredFilter implements IVoterFilter {
 	private static SimpleDateFormat CSV_DATE = new SimpleDateFormat("yyyy/MM/dd");
-
+	private static SimpleDateFormat TSV_DATE = new SimpleDateFormat("MM/dd/yyyy");
+	
 	private int months;
 	public RecentlyRegisteredFilter(int months) {
 		this.months = months;
@@ -19,7 +20,7 @@ public class RecentlyRegisteredFilter implements IVoterFilter {
 
 		String date = v.getRegistrationDate();
         try {
-			Date rd = CSV_DATE.parse(date);
+			Date rd = TSV_DATE.parse(date);
 			long regTime = rd.getTime();
 			long curTime = System.currentTimeMillis();
 			long oneMonth = 1000L * 60 * 60 * 24 * 30 * months;

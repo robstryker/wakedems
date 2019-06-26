@@ -13,9 +13,8 @@
 	    <include>**/*</include>
   	</includes>
 	<excludes>
-	   <exclude>precincts/voters/*.csv</exclude>
-	   <exclude>precincts/voters/*.zip</exclude>
-	   <exclude>precincts/voters/*.xlsx</exclude>
+	   <exclude>partyChange/*.csv</exclude>
+	   <exclude>precincts/voters/current/*</exclude>
 	   <exclude>precincts/maps/**/*</exclude>
 	</excludes>
         </fileSet>

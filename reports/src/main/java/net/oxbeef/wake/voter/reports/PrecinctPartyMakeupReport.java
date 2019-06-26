@@ -9,6 +9,7 @@ import java.util.Map;
 
 import net.oxbeef.wake.voter.model.Voter;
 import net.oxbeef.wake.voter.model.VoterModel;
+import net.oxbeef.wake.voter.model.data.source.ExternalDataSource;
 import net.oxbeef.wake.voter.model.precinct.IPrecinct;
 import net.oxbeef.wake.voter.model.precinct.IPrecinctSubdivision;
 import net.oxbeef.wake.voter.model.precinct.PrecinctCore;
@@ -21,10 +22,8 @@ public class PrecinctPartyMakeupReport {
 	}
 
 	public String run() throws IOException {
-
-		String current = new File(".").getCanonicalPath();
-		String precinctDataLoc = current + "/../resources/precincts/voters/";
-		String definitionLoc = current + "/../resources/precincts/definitions/";
+		String precinctDataLoc = ExternalDataSource.getInstance().getPrecinctDataLoc();
+		String definitionLoc = ExternalDataSource.getInstance().getDefinitionLoc();
 
 		IPrecinct precinct = getPrecinct(precinctId, definitionLoc);
 		if (precinct != null) {
@@ -92,13 +91,13 @@ public class PrecinctPartyMakeupReport {
 	}
 
 	private VoterModel loadVoterModel(String precinctId, String precinctDataLoc) {
-		String fileName = precinctDataLoc + precinctId + ".csv";
+		String fileName = precinctDataLoc + precinctId + ".tsv";
 		return PrecinctCore.loadVoterModel(new File(fileName));
 	}
 	
 	private VoterModel loadVoterModel(String precinctId, IPrecinct precinct, String precinctDataLoc) {
 		// The name of the file to open.
-		String fileName = precinctDataLoc + precinctId + ".csv";
+		String fileName = precinctDataLoc + precinctId + ".tsv";
 		return PrecinctCore.loadVoterModel(new File(fileName), precinct);
 	}
 

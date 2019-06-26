@@ -82,6 +82,8 @@ public class VoterRegistryReader {
 			int i = v.getAgeInt();
 		} catch(NumberFormatException nfe) {
 			return false;
+		} catch(ArrayIndexOutOfBoundsException aioobe) {
+			return false;
 		}
 		return true;
 	}

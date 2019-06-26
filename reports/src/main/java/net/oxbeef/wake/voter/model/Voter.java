@@ -45,7 +45,8 @@ public class Voter implements IVoterColumnsNCBOE {
 	public String getStreet() {
 		int begin = getStreetNumber().length();
 		String tmp = getSegment(res_street_address).substring(begin);
-		int end = getSegment(res_street_address).indexOf("  #");
+
+		int end = tmp.indexOf("  #");
 		if( end != -1 ) {
 			tmp = tmp.substring(0, end);
 		}

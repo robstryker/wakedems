@@ -1,12 +1,12 @@
 package net.oxbeef.wake.voter.reports;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
+import net.oxbeef.wake.voter.main.MainModel;
 import net.oxbeef.wake.voter.model.IVoterFilter;
 import net.oxbeef.wake.voter.model.Voter;
 import net.oxbeef.wake.voter.model.VoterModel;
@@ -22,23 +22,16 @@ import net.oxbeef.wake.voter.model.util.VoterUtility;
 public class NewlyRegisteredVotersReport {
 	private String precinctId;
 	private int months;
-	public NewlyRegisteredVotersReport(String precinct, int months) {
+	private MainModel model;
+	public NewlyRegisteredVotersReport(String precinct, MainModel model, int months) {
 		this.precinctId = precinct;
+		this.model = model;
 		this.months = months;
 	}
 
 	public String run() throws IOException {
-
-		String precinctDataLoc = ExternalDataSource.getInstance().getPrecinctDataLoc();
-		String definitionLoc = ExternalDataSource.getInstance().getDefinitionLoc();
-
-		IPrecinct precinct = getPrecinct(precinctId, definitionLoc);
-		VoterModel vm = null;
-		if (precinct != null) {
-			vm = loadVoterModel(precinct.getId(), precinct, precinctDataLoc);
-		} else {
-			vm = loadVoterModel(precinctId, precinctDataLoc);
-		}
+		IPrecinct precinct = getPrecinct(precinctId);
+		VoterModel vm = model.getOrCreateVoterModel(precinctId);
 		
 		StringBuffer sb = new StringBuffer();
 		RecentlyRegisteredFilter filter = new RecentlyRegisteredFilter(months);
@@ -141,19 +134,8 @@ public class NewlyRegisteredVotersReport {
 		return indented;
 	}
 
-	private VoterModel loadVoterModel(String precinctId, String precinctDataLoc) {
-		String fileName = precinctDataLoc + precinctId + ".tsv";
-		return PrecinctCore.loadVoterModel(new File(fileName));
-	}
-	
-	private VoterModel loadVoterModel(String precinctId, IPrecinct precinct, String precinctDataLoc) {
-		// The name of the file to open.
-		String fileName = precinctDataLoc + precinctId + ".tsv";
-		return PrecinctCore.loadVoterModel(new File(fileName), precinct);
-	}
-
-	public static final IPrecinct getPrecinct(String id, String precinctDefinitions) {
-		return PrecinctCore.getPrecinct(id, precinctDefinitions);
+	public static final IPrecinct getPrecinct(String id) {
+		return PrecinctCore.getPrecinct(id, ExternalDataSource.getInstance().getDefinitionLoc());
 	}
 
 }

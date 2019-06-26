@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import net.oxbeef.wake.voter.reports.NewlyRegisteredVotersReport;
 import net.oxbeef.wake.voter.reports.PrecinctPartyMakeupReport;
+import net.oxbeef.wake.voter.reports.PrecinctPartyRegistrationChangeReport;
 import net.oxbeef.wake.voter.reports.UniqueResidencesReport;
 
 public class VoterMain {
@@ -20,21 +21,29 @@ public class VoterMain {
 		String precinct = args[0];
 //		String precinct = "04-06";
 		
+		MainModel model = new MainModel();
+		model.getChangedPartyModel(92);
+		model.getOrCreateVoterModel(precinct);
+		
 		StringBuffer sb = new StringBuffer();
 		sb.append("Report for precinct " + precinct + "\n\n");
 		
 		appendReportHeader("Newly Registered Voters", sb);
-		sb.append(indent(new NewlyRegisteredVotersReport(precinct, 6).run(),5));
+		sb.append(indent(new NewlyRegisteredVotersReport(precinct, model, 6).run(),5));
 		
 		appendReportHeader(new String[] {
 				"Unique Residences Report",
 				"For use in planning how to canvas your precinct",
 				"Warning: This only counts residences with REGISTERED voters!"
 		}, sb);
-		sb.append(indent(new UniqueResidencesReport(precinct).run(), 5));
+		sb.append(indent(new UniqueResidencesReport(precinct, model).run(), 5));
 		
 		appendReportHeader("Partisan makeup report", sb);
-		sb.append(indent(new PrecinctPartyMakeupReport(precinct).run(), 5));
+		sb.append(indent(new PrecinctPartyMakeupReport(precinct, model).run(), 5));
+
+		
+		appendReportHeader("Changed Party Registration", sb);
+		sb.append(indent(new PrecinctPartyRegistrationChangeReport(precinct, model).run(), 5));
 
 		System.out.println(sb.toString());
 	}

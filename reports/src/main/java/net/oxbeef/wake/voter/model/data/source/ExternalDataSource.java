@@ -11,12 +11,14 @@ public class ExternalDataSource {
 	
 	private String precinctDataLoc;
 	private String definitionLoc;
+	private String partyChangeFolder;
 	
 	private ExternalDataSource() {
 		try {
 			String current = new File(".").getCanonicalPath();
 			precinctDataLoc = current + "/../resources/precincts/voters/current/";
 			definitionLoc = current + "/../resources/precincts/definitions/";
+			partyChangeFolder = (current + "/../resources/partyChange/");
 		} catch(IOException ioe) {
 			throw new RuntimeException("Cannot find source data");
 		}
@@ -28,5 +30,9 @@ public class ExternalDataSource {
 
 	public String getDefinitionLoc() {
 		return definitionLoc;
+	}
+
+	public String getPartyChangeFolder() {
+		return partyChangeFolder;
 	}
 }

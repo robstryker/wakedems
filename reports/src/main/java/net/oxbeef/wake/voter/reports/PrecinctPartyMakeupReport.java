@@ -7,6 +7,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+import net.oxbeef.wake.voter.main.MainModel;
 import net.oxbeef.wake.voter.model.Voter;
 import net.oxbeef.wake.voter.model.VoterModel;
 import net.oxbeef.wake.voter.model.data.source.ExternalDataSource;
@@ -17,23 +18,22 @@ import net.oxbeef.wake.voter.model.util.VoterUtility;
 
 public class PrecinctPartyMakeupReport {
 	private String precinctId;
-	public PrecinctPartyMakeupReport(String precinct) {
+	private MainModel model;
+	public PrecinctPartyMakeupReport(String precinct, MainModel model) {
 		this.precinctId = precinct;
+		this.model = model;
 	}
 
 	public String run() throws IOException {
-		String precinctDataLoc = ExternalDataSource.getInstance().getPrecinctDataLoc();
-		String definitionLoc = ExternalDataSource.getInstance().getDefinitionLoc();
-
-		IPrecinct precinct = getPrecinct(precinctId, definitionLoc);
+		IPrecinct precinct = getPrecinct(precinctId);
+		VoterModel vm = model.getOrCreateVoterModel(precinctId);
+		
 		if (precinct != null) {
-			VoterModel vm = loadVoterModel(precinct.getId(), precinct, precinctDataLoc);
 			return printVotersPerSubdivision(vm, precinct, false, false);
 		} else {
 			StringBuffer sb = new StringBuffer();
 			sb.append("Subdivisions have not been declared for precinct " + precinctId);
 			sb.append("\nPrinting information by street.");
-			VoterModel vm = loadVoterModel(precinctId, precinctDataLoc);
 			ArrayList<Voter> all = vm.getAll();
 			sb.append("\nPrecinct-wide: " + VoterUtility.partisanInformation(vm.getAll()) + "\n");
 			sb.append(getVotersByStreetOutput(all));
@@ -101,8 +101,8 @@ public class PrecinctPartyMakeupReport {
 		return PrecinctCore.loadVoterModel(new File(fileName), precinct);
 	}
 
-	public static final IPrecinct getPrecinct(String id, String precinctDefinitions) {
-		return PrecinctCore.getPrecinct(id, precinctDefinitions);
+	public static final IPrecinct getPrecinct(String id) {
+		return PrecinctCore.getPrecinct(id, ExternalDataSource.getInstance().getDefinitionLoc());
 	}
 
 }

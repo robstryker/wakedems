@@ -61,4 +61,7 @@ public class Voter implements IVoterColumnsNCBOE {
 	public String getPrecinct() {
 		return getSegment(precinct_abbrv);
 	}
+	public String getVoterRegistrationNumber() {
+		return getSegment(voter_reg_num);
+	}
 }

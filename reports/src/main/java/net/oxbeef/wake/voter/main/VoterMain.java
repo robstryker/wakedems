@@ -31,6 +31,12 @@ public class VoterMain {
 		appendReportHeader("Newly Registered Voters", sb);
 		sb.append(indent(new NewlyRegisteredVotersReport(precinct, model, 6).run(),5));
 		
+		appendReportHeader("Partisan makeup report", sb);
+		sb.append(indent(new PrecinctPartyMakeupReport(precinct, model).run(), 5));
+
+		appendReportHeader("Changed Party Registration", sb);
+		sb.append(indent(new PrecinctPartyRegistrationChangeReport(precinct, model).run(), 5));
+
 		appendReportHeader(new String[] {
 				"Unique Residences Report",
 				"For use in planning how to canvas your precinct",
@@ -38,13 +44,6 @@ public class VoterMain {
 		}, sb);
 		sb.append(indent(new UniqueResidencesReport(precinct, model).run(), 5));
 		
-		appendReportHeader("Partisan makeup report", sb);
-		sb.append(indent(new PrecinctPartyMakeupReport(precinct, model).run(), 5));
-
-		
-		appendReportHeader("Changed Party Registration", sb);
-		sb.append(indent(new PrecinctPartyRegistrationChangeReport(precinct, model).run(), 5));
-
 		System.out.println(sb.toString());
 	}
 

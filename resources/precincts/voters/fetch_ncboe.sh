@@ -7,6 +7,7 @@
    cmd="cat $csvfile | cut -d '	' -f 34 | sort | uniq | grep '-' | tr -d '\"'"
    echo $cmd
    for fn in `bash -c "$cmd"`; do
+      echo "Separating out precinct $fn"
       cat $csvfile | grep $fn > $fn.tsv
    done
    cd ../

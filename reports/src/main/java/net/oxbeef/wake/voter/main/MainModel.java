@@ -4,7 +4,9 @@ import java.io.File;
 import java.util.HashMap;
 
 import net.oxbeef.wake.voter.model.ChangedPartyModel;
+import net.oxbeef.wake.voter.model.PreviousStatewideVoterModel;
 import net.oxbeef.wake.voter.model.VoterModel;
+import net.oxbeef.wake.voter.model.VoterRegistryReaderException;
 import net.oxbeef.wake.voter.model.data.source.ExternalDataSource;
 import net.oxbeef.wake.voter.model.precinct.IPrecinct;
 import net.oxbeef.wake.voter.model.precinct.PrecinctCore;
@@ -12,6 +14,8 @@ import net.oxbeef.wake.voter.model.precinct.PrecinctCore;
 public class MainModel {
 	private HashMap<String, VoterModel> modelMap;
 	private HashMap<String, ChangedPartyModel> changedPartyModel;
+	private PreviousStatewideVoterModel previousStateModel;
+	private boolean previousStateModelFailed;
 	
 	public MainModel() {
 		modelMap = new HashMap<>();
@@ -62,6 +66,19 @@ public class MainModel {
 
 	public static final IPrecinct getPrecinct(String id, String precinctDefinitions) {
 		return PrecinctCore.getPrecinct(id, precinctDefinitions);
+	}
+	
+	public PreviousStatewideVoterModel getOrCreatePreviousVoterModel(String precinctId, String county, VoterModel vm) {
+		if( previousStateModel == null && !previousStateModelFailed) {
+			// create
+			try {
+				previousStateModel = new PreviousStatewideVoterModel(precinctId, county, vm);
+			} catch(VoterRegistryReaderException vrre ) {
+				vrre.printStackTrace();
+				previousStateModelFailed = true;
+			}
+		}
+		return previousStateModel;
 	}
 
 }

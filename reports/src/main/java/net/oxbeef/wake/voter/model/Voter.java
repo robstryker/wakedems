@@ -65,4 +65,7 @@ public class Voter implements IVoterColumnsNCBOE {
 	public String getVoterRegistrationNumber() {
 		return getSegment(voter_reg_num);
 	}
+	public String getNCID() {
+		return getSegment(ncid);
+	}
 }

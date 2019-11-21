@@ -12,11 +12,13 @@ public class ExternalDataSource {
 	private String precinctDataLoc;
 	private String definitionLoc;
 	private String partyChangeFolder;
+	private String previousVoterDataLoc;
 	
 	private ExternalDataSource() {
 		try {
 			String current = new File(".").getCanonicalPath();
 			precinctDataLoc = current + "/../resources/precincts/voters/current/";
+			previousVoterDataLoc = (current + "/../resources/precincts/voters/previous/");
 			definitionLoc = current + "/../resources/precincts/definitions/";
 			partyChangeFolder = (current + "/../resources/partyChange/");
 		} catch(IOException ioe) {
@@ -35,4 +37,9 @@ public class ExternalDataSource {
 	public String getPartyChangeFolder() {
 		return partyChangeFolder;
 	}
+
+	public String getPreviousVoterDataLoc() {
+		return previousVoterDataLoc;
+	}
+
 }

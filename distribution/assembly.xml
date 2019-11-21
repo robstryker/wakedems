@@ -15,6 +15,7 @@
 	<excludes>
 	   <exclude>partyChange/*.csv</exclude>
 	   <exclude>precincts/voters/current/*</exclude>
+	   <exclude>precincts/voters/previous/*</exclude>
 	   <exclude>precincts/maps/**/*</exclude>
 	</excludes>
         </fileSet>

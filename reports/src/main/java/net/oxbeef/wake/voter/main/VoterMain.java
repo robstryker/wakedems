@@ -24,12 +24,16 @@ public class VoterMain {
 		MainModel model = new MainModel();
 		model.getChangedPartyModel(92);
 		model.getOrCreateVoterModel(precinct);
+		model.getOrCreatePreviousVoterModel(precinct, "WAKE", model.getOrCreateVoterModel(precinct));
+		
 		
 		StringBuffer sb = new StringBuffer();
 		sb.append("Report for precinct " + precinct + "\n\n");
 		
 		appendReportHeader("Newly Registered Voters", sb);
 		sb.append(indent(new NewlyRegisteredVotersReport(precinct, model, 6).run(),5));
+		
+		
 		
 		appendReportHeader("Partisan makeup report", sb);
 		sb.append(indent(new PrecinctPartyMakeupReport(precinct, model).run(), 5));

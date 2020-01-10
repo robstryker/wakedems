@@ -90,8 +90,12 @@ public class ChangedPartyModel {
 		File lastYearFile = new File(folder, f2);
 		File thisYearFile = new File(folder, f1);
 		
-		load(lastYearFile, changes, filter);
-		load(thisYearFile, changes, filter);
+		if( lastYearFile.exists()) {
+			load(lastYearFile, changes, filter);
+		}
+		if( thisYearFile.exists()) {
+			load(thisYearFile, changes, filter);
+		}
 	}
 
 	public void load(File f, Map<String, PartyChange> map, IPartyChangeFilter filter) {

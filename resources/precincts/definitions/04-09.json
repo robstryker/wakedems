@@ -1,0 +1,105 @@
+{
+	"name": "Cary Fire Station #9",
+	"id": "04-09",
+	"subdivision": [
+		{ "name":"1): Preston Fairway", "streets": [
+			{ "name":"SUMMER LAKES DR"},
+			{ "name":"ANGLERS CV"},
+			{ "name":"TRAIL BEND CT"},
+			{ "name":"MIRROR LAKE CT"},
+			{ "name":"FLYING HILLS CIR"},
+			{ "name":"EATON PL"},
+			{ "name":"GREY BRIDGE ROW", "max":"199"},
+			{ "name":"BALSAMWOOD CT"}
+		] },
+		{ "name":"2) Preston Bluffs + Preston Falls Villas", "streets": [
+			{ "name":"POND BLUFF WAY"},
+			{ "name":"OAKPOND CT"},
+			{ "name":"VISTA GREEN CT"},
+			{ "name":"GREY BRIDGE ROW", "min":"200"},
+			{ "name":"CRABTREE CROSSING PKWY"}
+		] },
+		{ "name":"3a)  Preston Wynds + Highlands South", "streets": [
+			{ "name":"LEWISTON CT"},
+			{ "name":"VALENTA CT"},
+			{ "name":"GREY HORSE DR"}
+		] },
+		{ "name":"3b)  Preston Highlands", "streets": [
+			{ "name":"HIGH COUNTRY DR"},
+			{ "name":"CENTERVILLE CT"},
+			{ "name":"CHATBURN CIR"},
+			{ "name":"BATTERSEA PARK CIR"},
+			{ "name":"FRENCHMANS BLUFF DR"},
+			{ "name":"HEARTSBOURNE PL"},
+			{ "name":"BLACKHEATH CT"},
+			{ "name":"MADRIGAL CT"},
+			{ "name":"INNISBROOK CT"},
+			{ "name":"PROMONTORY POINT DR"}
+		] },
+		{ "name":"4a) Marquis @ Preston", "streets": [
+			{ "name":"PRESTON GROVE AVE"}
+		] },
+		{ "name":"4b) Preston Oaks", "streets": [
+			{ "name":"HARVEST ROW CT"},
+			{ "name":"LEBLANC CT"},
+			{ "name":"ROEBLING LN"},
+			{ "name":"WOHLER CT"},
+			{ "name":"PRESTON OAKS LN"}
+		] },
+		{ "name":"5) highland oaks", "streets": [
+			{ "name":"HUNTSWORTH PL"},
+			{ "name":"RAVENDALE PL"},
+			{ "name":"TORCASTLE CIR"},
+			{ "name":"BELROSE DR"},
+			{ "name":"WILLOWMERE CT"},
+			{ "name":"HIGH HOUSE RD"}
+		] },
+		{ "name":"6) Weatherstone West", "streets": [
+			{ "name":"CASTALIA DR", "max":"2005"},
+			{ "name":"SPRING NEEDLE CT"},
+			{ "name":"MUSCADINE CT"},
+			{ "name":"CUMULUS CT"},
+			{ "name":"BAROMETER LN"},
+			{ "name":"ORION CT"},
+			{ "name":"CLEAR SKY CT"},
+			{ "name":"FLYING LEAF CT"},
+			{ "name":"NIMBUS CT"},
+			{ "name":"PAINTED FALL WAY"}
+		] },
+		{ "name":"7) Weatherstone East", "streets": [
+			{ "name":"SILVER LINING LN"},
+			{ "name":"OZONE CT"},
+			{ "name":"CALM WINDS CT"},
+			{ "name":"ROSE SKY CT"},
+			{ "name":"SEABREEZE CT"},
+			{ "name":"SPRING BUD DR"}
+		] },
+		{ "name":"8) Glenkirk", "streets": [
+			{ "name":"OLDE WEATHERSTONE WAY"},
+			{ "name":"NEWINGTON HILLS WAY"},
+			{ "name":"LATHBURY LANDING WAY"},
+			{ "name":"BEVINGTON HILLS CT"},
+			{ "name":"CRIGAN BLUFF DR"},
+			{ "name":"OLDHAM FOREST XING"},
+			{ "name":"HANIMAN PARK DR"},
+			{ "name":"KILLEARN MILL CT"}
+		] },
+		{ "name":"9a) Preston Reserve West", "streets": [
+			{ "name":"RIDGEMONT HILL RD"},
+			{ "name":"BERWICK VALLEY LN", "max":"999"},
+			{ "name":"FERN MEADOW DR"}
+		] },
+		{ "name":"9a) Preston Reserve East", "streets": [
+			{ "name":"BERWICK VALLEY LN", "min": "1000"},
+			{ "name":"EDENHURST AVE"}
+		] },
+		{ "name":"10) Chapel Hill Road Area", "streets": [
+			{ "name":"CHAPEL HILL RD"},
+			{ "name":"PIPERTON LN"},
+			{ "name":"LAMPWICK LN"},
+			{ "name":"RYMARK CT"},
+			{ "name":"REXBURG DR"},
+			{ "name":"JAMES JACKSON AVE"}
+		] }
+	]
+}

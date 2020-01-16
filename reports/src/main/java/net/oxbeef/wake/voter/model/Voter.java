@@ -41,6 +41,9 @@ public class Voter implements IVoterColumnsNCBOE {
 	public int getStreetNumberInt() {
 		return Integer.parseInt(getStreetNumber());
 	}
+	public String getGenderCode() {
+		return getSegment(gender_code);
+	}
 	
 	public String getStreet() {
 		int begin = getStreetNumber().length();

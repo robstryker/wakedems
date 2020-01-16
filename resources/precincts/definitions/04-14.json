@@ -1,0 +1,88 @@
+{
+	"name": "Cary Fire station #4",
+	"id": "04-14",
+	"subdivision": [
+		{ "name":"1) Woodwinds", "streets": [
+			{ "name":"TARBERT DR", "min":"1500"},
+			{ "name":"SOLWAY CT"},
+			{ "name":"ROTHES RD"},
+			{ "name":"KILMORY DR"},
+			{ "name":"NEILSON CT"},
+			{ "name":"WHITBORN CT"},
+			{ "name":"WOODWINDS INDUSTRIAL CT"},
+			{ "name":"TAYPORT CT"}
+		] },
+		{ "name":"2) Applecross Townhomes", "streets": [
+			{ "name":"INVERNESS CT"},
+			{ "name":"APPLECROSS DR"},
+			{ "name":"ABBOTS GLEN CT"}
+		] },
+		{ "name":"3) Colonial Townhomes", "streets": [
+			{ "name":"CHARTER CT"},
+			{ "name":"ASSEMBLY CT"},
+			{ "name":"COLONIAL TOWNES CT"}
+		] },
+		{ "name":"3) Scottish Hills South", "streets": [
+			{ "name":"BELOIT CT"},
+			{ "name":"LAUGHRIDGE DR"},
+			{ "name":"KEITH DR"},
+			{ "name":"WISHAW CT"},
+			{ "name":"BRODICK CT"},
+			{ "name":"COATBRIDGE CIR"},
+			{ "name":"LAKE PINE DR"},
+			{ "name":"TARBERT DR", "max":"1499"}
+		] },
+		{ "name":"4) Scottish Hills West", "streets": [
+			{ "name":"MCCOY CT"},
+			{ "name":"MCCLOUD CT"},
+			{ "name":"MCINTOSH CT"},
+			{ "name":"HIGHLAND TRL", "min":"1300"},
+			{ "name":"LANARK CT"},
+			{ "name":"HADDINGTON DR"},
+			{ "name":"BURGHEAD CT"},
+			{ "name":"BRAEMAR CT"}
+		] },
+		{ "name":"4) Scottish Hills Central", "streets": [
+			{ "name":"SELKIRK CT"},
+			{ "name":"DUNNET CT"},
+			{ "name":"MAYBOLE CT"},
+			{ "name":"GIFFORD CT"},
+			{ "name":"GATEHOUSE DR"},
+			{ "name":"HIGHLAND TRL", "max":"1299"},
+			{ "name":"BROOKGREEN DR", "min":"1100"},
+			{ "name":"LINTON CT"},
+			{ "name":"LARKHALL CT"},
+			{ "name":"KELTY CT"},
+			{ "name":"LOCHCARRON LN"}
+		] },
+		{ "name":"5) Scottish Hills North", "streets": [
+			{ "name":"CARNOUSTIE CIR"},
+			{ "name":"LOGAN CIR"},
+			{ "name":"KIRKWALL PL"},
+			{ "name":"TRIMBLE AVE"},
+			{ "name":"BELLAMY CT"},
+			{ "name":"BALMORAL DR"},
+			{ "name":"MISS GEORGIA CT"},
+			{ "name":"BROOKGREEN DR", "max":"1099", "min":"921"}
+		] },
+		{ "name":"6) Savon Heights", "streets": [
+			{ "name":"PINELAND DR"},
+			{ "name":"WINWOOD DR"},
+			{ "name":"MEDLIN DR"},
+			{ "name":"CUSCOWILLA DR"},
+			{ "name":"PALMETTO DR"},
+			{ "name":"PRINCE ST"},
+			{ "name":"SW MAYNARD RD"}
+
+		] },
+		{ "name":"6) Plantation Estates", "streets": [
+			{ "name":"OAKLEY CT"},
+			{ "name":"PAMLICO DR"},
+			{ "name":"DUB CT"},
+			{ "name":"BROOKGREEN DR", "max":"921"},
+			{ "name":"PLANTATION DR"}
+
+		] }
+	]
+}
+

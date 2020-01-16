@@ -50,18 +50,25 @@ public class PreviousStatewideVoterModel {
 			String county = null;
 			while ((line = bufferedReader.readLine()) != null) {
 				segments = line.split("\t");
-				ncid = segments[IVoterColumnsPreviousNCBOE.ncid-1];
-				precinct = segments[IVoterColumnsPreviousNCBOE.precinct_abbrv-1];
-				county = segments[IVoterColumnsPreviousNCBOE.county_desc-1];
+				int lineSegLength = segments.length;
+				if( IVoterColumnsPreviousNCBOE.ncid < lineSegLength ) {
+					ncid = segments[IVoterColumnsPreviousNCBOE.ncid-1];
+				}
+				if( IVoterColumnsPreviousNCBOE.precinct_abbrv < lineSegLength ) {
+					precinct = segments[IVoterColumnsPreviousNCBOE.precinct_abbrv-1];
+				}
+				if( IVoterColumnsPreviousNCBOE.county_desc < lineSegLength ) {
+					county = segments[IVoterColumnsPreviousNCBOE.county_desc-1];
+				}
 				if( currentRegistrationIds.contains(ncid)) {
-					currentVotersInOldData.put(ncid, new OldVoter(segments));
+					getCurrentVotersInOldData().put(ncid, new OldVoter(segments));
 				} else {
 					if(isEqual(precinct, targetPrecinct) && isEqual(county, targetCounty)) {
-						oldVotersMissingInCurrentData.put(ncid, new OldVoter(segments));					}
+						getOldVotersMissingInCurrentData().put(ncid, new OldVoter(segments));					}
 				}
 			}
-			System.out.println(currentVotersInOldData.size());
-			System.out.println(oldVotersMissingInCurrentData.size());
+			System.out.println(getCurrentVotersInOldData().size());
+			System.out.println(getOldVotersMissingInCurrentData().size());
 			long end = System.currentTimeMillis();
 			long duration = end - start;
 			System.out.println("Took " + duration + " ms");
@@ -95,7 +102,17 @@ public class PreviousStatewideVoterModel {
 	}
 
 	
-	private static class OldVoter {
+	public Map<String, OldVoter> getCurrentVotersInOldData() {
+		return currentVotersInOldData;
+	}
+
+
+	public Map<String, OldVoter> getOldVotersMissingInCurrentData() {
+		return oldVotersMissingInCurrentData;
+	}
+
+
+	public static class OldVoter {
 		private String[] segments;
 		public OldVoter(String[] s) {
 			segments = s;

@@ -1,0 +1,112 @@
+{
+	"name": "Good Shepherd United Church Of Christ",
+	"id": "04-15",
+	"subdivision": [
+		{ "name":"1) Cedar Pointe Condos", "streets": [
+			{ "name":"LAKE HOLLOW CIR"},
+			{ "name":"SHADY MEADOW CIR"},
+			{ "name":"SPRINGFORK DR"},
+			{ "name":"EDGEHILL PKWY"}
+		] },
+		{ "name":"2) Westview Cove", "streets": [
+			{ "name":"MARSHFIELD PL"},
+			{ "name":"WETHERSFIELD DR"},
+			{ "name":"GOLD MEADOW DR"},
+			{ "name":"STONEFORD CT"},
+			{ "name":"HIGH HOUSE RD", "min":"200", "max":"299"},
+			{ "name":"WESTVIEW COVE LN"}
+		] },
+		{ "name":"3) Cedar Creek", "streets": [
+			{ "name":"CASTALIA DR", "max":"999"},
+			{ "name":"ROUNDTREE CT"},
+			{ "name":"CEDAR CREEK DR"},
+			{ "name":"OLD APEX RD"},
+			{ "name":"HONEYSUCKLE LN"},
+			{ "name":"NW MAYNARD RD", "min":"700", "max":"999"},
+			{ "name":"DEODORA CT"}
+		] },
+		{ "name":"4) Carystone Townhomes", "streets": [
+			{ "name":"KRISTIN CT"},
+			{ "name":"CANDACE PL"},
+			{ "name":"VIRGINIA PL"},
+			{ "name":"JO ANNE CIR"},
+			{ "name":"TRACY CT"}
+		] },
+		{ "name":"5) Westfield + Castlebrook", "streets": [
+			{ "name":"TREADWELL CT"},
+			{ "name":"BELLSHILL CT"},
+			{ "name":"CASTLEFERN DR"},
+			{ "name":"EAGLESHAM WAY"}
+		] },
+		{ "name":"6a) Trappers Run North", "streets": [
+			{ "name":"HIGH HOUSE RD", "min":"700", "max":"799"},
+			{ "name":"CASTALIA DR", "min":"1300"},
+			{ "name":"STEEL TRAP CT"},
+			{ "name":"FLINTLOCK CT"},
+			{ "name":"BIGHORN CIR"},
+			{ "name":"WOOD HOLLOW DR"},
+			{ "name":"STONEHOLLOW CT"},
+			{ "name":"BROOK HOLLOW CT"},
+			{ "name":"RIDGE HOLLOW CT"},
+			{ "name":"TRAPPERS SACK RD"},
+			{ "name":"FOX DEN CT"}
+		] },
+		{ "name":"6b) Trappers Run South", "streets": [
+			{ "name":"CASTALIA DR", "max":"1299", "min":"1000"},
+			{ "name":"EAGLES NEST CT"},
+			{ "name":"HAWKS NEST CT"},
+			{ "name":"FOX CT"},
+			{ "name":"TRAPPERS RUN DR", "max":"499"},
+			{ "name":"OTTER DR"},
+			{ "name":"COUGAR CT"},
+			{ "name":"FAWN CT"},
+			{ "name":"ANTLER POINT DR"},
+			{ "name":"BLACK BEAR CT"},
+			{ "name":"WOLVERINE RD"},
+			{ "name":"N JAGUAR CT"},
+			{ "name":"S JAGUAR CT"}
+		] },
+		{ "name":"7) Battery and Surrounding Area", "streets": [
+			{ "name":"HAVERSTOCK CT"},
+			{ "name":"CULCROSS CT"},
+			{ "name":"CAVENDISH DR"},
+			{ "name":"BUCKLAND MILLS CT"},
+			{ "name":"BYRAMS FORD DR"},
+			{ "name":"DARBYTOWN PL"}
+		] },
+		{ "name":"8a) Young Landing + Brighton Woods", "streets": [
+			{ "name":"YOUNG LANDING CT"},
+			{ "name":"OAK BLUFF RUN"},
+			{ "name":"OAKMERE DR"},
+			{ "name":"UNION JACK LN"},
+			{ "name":"SOLSTICE CIR"},
+			{ "name":"W CHATHAM ST", "min":"1206", "max":"1206"}
+		] },
+		{ "name":"8b) Town Station", "streets": [
+			{ "name":"COOGEE LN"},
+			{ "name":"BALLENA CIR"},
+			{ "name":"MAROUBRA LOOP"},
+			{ "name":"BRONTE LN"}
+		] },
+		{ "name":"9) Andover", "streets": [
+			{ "name":"TRAPPERS RUN DR", "min":"500"},
+			{ "name":"QUID CT"},
+			{ "name":"KALIDA CT"},
+			{ "name":"OXPENS RD"},
+			{ "name":"LECKFORD WAY"},
+			{ "name":"TRACKERS RD"},
+			{ "name":"E CARNABY CT"},
+			{ "name":"W CARNABY CT"},
+			{ "name":"NORHAM DR"},
+			{ "name":"S KNIGHTSBRIDGE RD"},
+			{ "name":"N KNIGHTSBRIDGE RD"},
+			{ "name":"N BECKET ST"},
+			{ "name":"S BECKET ST"},
+			{ "name":"FALLSWORTH DR"}
+		] },
+		{ "name":"10) Ashcroft", "streets": [
+			{ "name":"CORGY DR"},
+			{ "name":"LUXON PL"}
+		] }
+	]
+}

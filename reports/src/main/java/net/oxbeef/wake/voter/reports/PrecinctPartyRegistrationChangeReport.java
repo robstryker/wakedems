@@ -1,6 +1,5 @@
 package net.oxbeef.wake.voter.reports;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -133,7 +132,7 @@ public class PrecinctPartyRegistrationChangeReport {
 		IPrecinctSubdivision[] all = p.getSubdivisions();
 		for (int i = 0; i < all.length; i++) {
 			IPrecinctSubdivision sd = all[i];
-			sb.append("\nSubdivision: " + sd.getName() + ": ");
+			sb.append("\nSubdivision: " + sd.getName() + ": \n");
 			List<Voter> sdVoters = VoterUtility.findVotersInSubdivision(sd, vm.getAll());
 			Collections.sort(sdVoters, new StreetComparator());
 			
@@ -152,7 +151,8 @@ public class PrecinctPartyRegistrationChangeReport {
 		sb.append("Voter ");
 		sb.append(v.getName());
 		sb.append(" at ");
-		sb.append(v.getFullStreetAddress());
+		sb.append(v.getFullStreetAddress().trim());
+		sb.append(" (" + v.getAge() + "/" + v.getGenderCode() + ")") ;
 		sb.append(" changed party from ");
 		sb.append(pc.getFrom());
 		sb.append(" to ");

@@ -1,0 +1,138 @@
+{
+	"name": "Laurel Park Elementary School",
+	"id": "04-10",
+	"subdivision": [
+		{ "name":"1) Laurel Park", "streets": [
+			{ "name":"LAUREL PARK PL"},
+			{ "name":"ROYAL BERRY CT"}
+		] },
+		{ "name":"2) Kilarney Ridge", "streets": [
+			{ "name":"KILARNEY RIDGE LOOP"}
+		] },
+		{ "name":"3) Kilarney Woods", "streets": [
+			{ "name":"DUNDALK WAY"},
+			{ "name":"LOCH LOMOND CIR"},
+			{ "name":"CASTLE BAY CT"}
+		] },
+		{ "name":"4) The Highlands West", "streets": [
+			{ "name":"TALLOWAY DR"},
+			{ "name":"MCDOLE CIR"},
+			{ "name":"BURNLEY DR", "min":"1708"},
+			{ "name":"TARBERT DR"},
+			{ "name":"BROADFORD DR"},
+			{ "name":"DUNBLANE CT"},
+			{ "name":"BURWICK RD"}
+		] },
+		{ "name":"5) The Highlands East", "streets": [
+			{ "name":"SUTERLAND RD"},
+			{ "name":"COLEN CT"},
+			{ "name":"KIRKCALDY RD"},
+			{ "name":"KENMURE CT"},
+			{ "name":"SALTOUN CT"},
+			{ "name":"GLENBUCKLEY RD", "max":"203"},
+			{ "name":"CONISTON CT"}
+		] },
+		{ "name":"6) The Picardy Point West", "streets": [
+			{ "name":"BURNLEY DR", "max":"1706"},
+			{ "name":"STONELEIGH DR"},
+			{ "name":"BARCLADINE CT"},
+			{ "name":"SEVERN CT"},
+			{ "name":"PORTNOCH CT"},
+			{ "name":"KETTLEBRIDGE DR", "min":"313"}
+		] },
+		{ "name":"6) The Picardy Point East", "streets": [
+			{ "name":"KETTLEBRIDGE DR", "max":"312"},
+			{ "name":"GLENBUCKLEY RD", "min":"204"},
+			{ "name":"GLENHIGH CT"},
+			{ "name":"DALRYMPLE LN"},
+			{ "name":"KILBRECK DR"},
+			{ "name":"BRIDGEWAY CT"},
+			{ "name":"HIGHLOCH CT"},
+			{ "name":"KILMORACK DR"},
+			{ "name":"KINGUSSIE CT"}
+		] },
+		{ "name":"7) Picardy Village", "streets": [
+			{ "name":"MAGERTON CT"},
+			{ "name":"PICARDY VILLAGE PL"}
+		] },
+		{ "name":"8) Brookline Village", "streets": [
+			{ "name":"CAROSTONE CT"},
+			{ "name":"MONMOUTH LOOP"},
+			{ "name":"OLD APEX RD"},
+			{ "name":"ASHTON RIDGE LN"},
+			{ "name":"LAURA DUNCAN RD", "max":"2901"}
+		] },
+		{ "name":"9) Triangle Forest + Sussex", "streets": [
+			{ "name":"MARILYN CIR"},
+			{ "name":"DONNA PL"}
+		] },
+		{ "name":"10) The Ranches", "streets": [
+			{ "name":"W MARILYN CIR"},
+			{ "name":"MIRAMAR CT"},
+			{ "name":"LARAMIE CT"},
+			{ "name":"BRIGHT ANGEL DR"},
+			{ "name":"CHULA VISTA CT"},
+			{ "name":"BUENA VISTA DR"}
+		] },
+		{ "name":"11) North of The Ranches", "streets": [
+			{ "name":"TRAILING OAK"},
+			{ "name":"POCONO LN"},
+			{ "name":"MARIPOSA DR"},
+			{ "name":"LONE EAGLE CT"}
+		] },
+		{ "name":"12) Brookgreen", "streets": [
+			{ "name":"ARVO LN"},
+			{ "name":"TABULA PL"},
+			{ "name":"MAJNUN LN"},
+			{ "name":"ROMAINE CT"},
+			{ "name":"KRONOS LN"},
+			{ "name":"KORBEL PL"}
+		] },
+		{ "name":"13a) Brookgreen Forest West", "streets": [
+			{ "name":"CHATSWORTH ST"},
+			{ "name":"WHITLOCK LN"},
+			{ "name":"BAYREUTH PL"},
+			{ "name":"NORITAKE DR"},
+			{ "name":"CIBOLA DR"},
+			{ "name":"SARABANDE DR", "min":"200"}
+		] },
+		{ "name":"13b) Brookgreen Forest East", "streets": [
+			{ "name":"SARABANDE DR", "max":"200"},
+			{ "name":"AMBERGLOW PL"},
+			{ "name":"LAUREL BRANCH DR"},
+			{ "name":"COPPER GREEN ST"},
+			{ "name":"LAURA DUNCAN RD", "min":"2902"}
+		] },
+		{ "name":"14) Evergreen", "streets": [
+			{ "name":"WAX MYRTLE CT"},
+			{ "name":"LONDON PLAIN CT"},
+			{ "name":"SHADY CT"},
+			{ "name":"MINT CT"}
+		] },
+		{ "name":"15) Drawbridge and Rockhampton", "streets": [
+			{ "name":"JAVELIN CT"},
+			{ "name":"N DRAWBRIDGE LN"},
+			{ "name":"S DRAWBRIDGE LN"},
+			{ "name":"RAVENNA WAY"},
+			{ "name":"JOUST CT"},
+			{ "name":"UXBRIDGE CT"},
+			{ "name":"THAMESFORD WAY"},
+			{ "name":"OLD ROCKHAMPTON LN"}
+		] },
+		{ "name":"15) Brampton Moors", "streets": [
+			{ "name":"WALSHINGHAM LN"},
+			{ "name":"BRAMPTON LN"}
+		] },
+		{ "name":"16) Chatham Misc", "streets": [
+			{ "name":"HUNTING CHASE"},
+			{ "name":"NORMANDALE DR"},
+			{ "name":"GRACEWOOD CT"},
+			{ "name":"PICKERING PL"},
+			{ "name":"ROSSWOOD PL"}
+		] }
+	]
+}
+
+
+
+

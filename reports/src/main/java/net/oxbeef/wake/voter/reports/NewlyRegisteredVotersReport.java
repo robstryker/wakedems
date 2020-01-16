@@ -40,7 +40,7 @@ public class NewlyRegisteredVotersReport {
 		sb.append("Precinct " + precinctId + " has " + filtered.size() + " newly registered voters in the past " + months + " months\n");
 		sb.append(partisanInformation(filtered));
 		sb.append("Age Statistics:\n");
-		addStatistics(" New Arrivals: ", filtered, sb);
+		addStatistics(" New Registrants: ", filtered, sb);
 		addStatistics("\n Entire Precinct: ", vm.getAll(), sb);
 		sb.append("\n");
 		
@@ -86,11 +86,19 @@ public class NewlyRegisteredVotersReport {
 		return sb.toString();
 	}
 	private String voterToString(Voter v) {
-		String addon = "";
-		addon = ", " + v.getParty();
-		addon += ", " + v.getAge() + "y/o";
-		addon += ", " + v.getRegistrationDate();
-		return "    " + v.getName() + ", " + v.getFullStreetAddress() + addon;
+		StringBuffer sb = new StringBuffer();
+		sb.append("    ");
+		sb.append(v.getName());
+		sb.append(", ");
+		sb.append(v.getFullStreetAddress().trim());
+		sb.append(", ");
+		sb.append(v.getParty());
+		sb.append(", ");
+		sb.append(v.getAge());
+		sb.append("y/o");
+		sb.append(", ");
+		sb.append(v.getRegistrationDate());
+		return sb.toString();
 	}
 	
 	private List<Voter> filter(List<Voter> all, IVoterFilter filter) {

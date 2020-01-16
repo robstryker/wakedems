@@ -1,0 +1,33 @@
+{
+	"name": "Laurel Park Elementary School",
+	"id": "20-04",
+	"subdivision": [
+		{ "name":"1) Highway 55 +", "streets": [
+			{ "name":"ROCKY HILL LN"},
+			{ "name":"CHARLIES WAY"},
+			{ "name":"CHARLES WAY"},
+			{ "name":"OAK RIDGE DR"},
+			{ "name":"COUNTRY HEARTS LN"},
+			{ "name":"VALLEY WOODS LN"},
+			{ "name":"HOLT RD", "min":"1800"},
+			{ "name":"NC 55 HWY"},
+			{ "name":"MILLEY BROOK CT"},
+			{ "name":"LEWEY DR"},
+			{ "name":"PARK YORK LN", "min":"500"}
+		] },
+		{ "name":"2) Brookstone", "streets": [
+			{ "name":"FRYAR CREEK DR"},
+			{ "name":"PARK YORK LN", "max":"500"},
+			{ "name":"SPINDLE CREEK CT"},
+			{ "name":"SEYMOUR CREEK DR"},
+			{ "name":"FOREST BROOK DR"},
+			{ "name":"JORDAN CREEK DR"},
+			{ "name":"PINE STROLL DR"},
+			{ "name":"BROOK CREEK DR"},
+			{ "name":"LEWEY STONE CT"},
+			{ "name":"STARDEN BROOK CT"},
+			{ "name":"BROOK FRYAR ST"},
+			{ "name":"POINTER CREEK CT"}
+		] }
+	]
+}

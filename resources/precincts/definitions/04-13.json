@@ -1,0 +1,186 @@
+{
+	"name": "Lifepointe Church",
+	"id": "04-13",
+	"subdivision": [
+		{ "name":"1) Linville Ridge", "streets": [
+			{ "name":"HIDDEN BLUFF LN"},
+			{ "name":"SMOKEMONT DR"},
+			{ "name":"FOSCOE LN"},
+			{ "name":"LOST TREE LN"}
+		] },
+		{ "name":"2) Center Pointe / Parkcrest", "streets": [
+			{ "name":"VINCA CIR"},
+			{ "name":"POINTE CREST CT"},
+			{ "name":"COLCHIS CT"},
+			{ "name":"JODHPUR DR"},
+			{ "name":"GATEPOST LN"},
+			{ "name":"CENTER POINTE DR"}
+		] },
+		{ "name":"3) Olde Salem", "streets": [
+			{ "name":"BETHABARA LN"},
+			{ "name":"CANDLE TEA CT"},
+			{ "name":"LEINBACH CT"},
+			{ "name":"KINDRED WAY"},
+			{ "name":"TEALIGHT LN"},
+			{ "name":"MORAVIA LN"}
+		] },
+		{ "name":"3a) Arround Olde Salem", "streets": [
+			{ "name":"CYPRESS FALLS DR"},
+			{ "name":"BROOK MANOR CT"},
+			{ "name":"BRUSHY LAKE WAY"},
+			{ "name":"WESTHIGH ST", "min":"200", "max":"202"},
+			{ "name":"TUSSLED IVY WAY"}
+		] },
+		{ "name":"4) Glen @ Westhigh", "streets": [
+			{ "name":"TAHOE GLEN PL"},
+			{ "name":"CHAMPLAIN CREST WAY"},
+			{ "name":"CAYUGA RIVER LN"},
+			{ "name":"KAYLIN LN"},
+			{ "name":"DOTSON WAY"},
+			{ "name":"SALEM CHURCH RD"},
+			{ "name":"DIAMOND VALLEY DR"}
+		] },
+		{ "name":"5) St. James Village / Abbey Hall etc", "streets": [
+			{ "name":"ABBEY HALL WAY"},
+			{ "name":"CITY WALLS ST"},
+			{ "name":"OLD LONDON WAY"},
+			{ "name":"PARADOX CT"},
+			{ "name":"BRANUM CT"},
+			{ "name":"MANTER LN"},
+			{ "name":"DAVIS DR"},
+			{ "name":"CHURCHVIEW ST", "min":"300"},
+			{ "name":"BRASHEAR CT"}
+		] },
+		{ "name":"6) Westhigh West", "streets": [
+			{ "name":"CHURCHVIEW ST", "max":"300"},
+			{ "name":"HILLTOP VIEW ST"},
+			{ "name":"WESTHIGH ST", "min":"600"}
+		] },
+		{ "name":"7) Royal Tower ", "streets": [
+			{ "name":"PARISH HOUSE RD"},
+			{ "name":"CASTLE GARDEN ST"},
+			{ "name":"COURTS GARDEN WAY"},
+			{ "name":"ROYAL TOWER WAY"}
+		] },
+		{ "name":"8) Giverny ", "streets": [
+			{ "name":"MONT DE SION DR"},
+			{ "name":"SAINT LAZARE DR"},
+			{ "name":"VE THEYL LN"},
+			{ "name":"HUGER LN"},
+			{ "name":"GIVERNY PL"},
+			{ "name":"LUDSTONE CT"},
+			{ "name":"LONGSTOCK CT"},
+			{ "name":"MEREWORTH PL"},
+			{ "name":"MODENA DR", "max":"404"},
+			{ "name":"MANOR GARDEN WAY"}
+		] },
+		{ "name":"9a) MacArthur Park North", "streets": [
+			{ "name":"DISRAELI DR"},
+			{ "name":"SPIVEY CT"},
+			{ "name":"HEBRIDE CT"},
+			{ "name":"WIDECOMBE CT"},
+			{ "name":"POLPERRO DR"},
+			{ "name":"BARONS GLENN WAY"},
+			{ "name":"GABLES POINT WAY"},
+			{ "name":"LANGDALE PL"},
+			{ "name":"MACARTHUR DR", "min":"110", "max":"112"}
+		] },
+		{ "name":"9b) MacArthur Park South", "streets": [
+			{ "name":"BLYTHEWOOD CT"},
+			{ "name":"PENNSBURY CT"},
+			{ "name":"LAUREL HOLLOW PL"},
+			{ "name":"WELCHDALE CT"},
+			{ "name":"YOUNGSFORD CT"},
+			{ "name":"WALDENBROOK CT"},
+			{ "name":"HEATHRIDGE LN"}
+		] },
+		{ "name":"10) Graylyn + Gleneagles ", "streets": [
+			{ "name":"MODENA DR", "min":"405"},
+			{ "name":"DUMNONIA CT"},
+			{ "name":"STOKESAY CT"},
+			{ "name":"COVINGTON SQUARE DR"},
+			{ "name":"CAMBAY CT"},
+			{ "name":"MEROWE CT"},
+			{ "name":"BARTHEL DR"},
+			{ "name":"PACOVAL PL"},
+			{ "name":"CHIMO CT"}
+		] },
+		{ "name":"11) Amesbury + Canterbury", "streets": [
+			{ "name":"COVEWOOD CT"},
+			{ "name":"GILLESPIE CT"},
+			{ "name":"FOXCREST CT"},
+			{ "name":"WOODSTAR DR"},
+			{ "name":"GLENSFORD WAY"},
+			{ "name":"RIVA TRACE DR"},
+			{ "name":"TRAILVIEW DR"},
+			{ "name":"ASHLEY BROOK CT"},
+			{ "name":"CANTON CHASE CT"},
+			{ "name":"HADDONFIELD LN"}
+		] },
+		{ "name":"12) Southwick + Waldo Rood SW", "streets": [
+			{ "name":"PELLINORE CT"},
+			{ "name":"SWORDGATE DR"},
+			{ "name":"DOVERSHIRE CT"},
+			{ "name":"PALADIN PL"},
+			{ "name":"CHESSINGTON CT"},
+			{ "name":"ACCOLADE DR"},
+			{ "name":"GRAYWICK WAY"},
+			{ "name":"ASHWICK CT"},
+			{ "name":"SOUTHWICK CT"}
+		] },
+		{ "name":"13) Waldo Rood North", "streets": [
+			{ "name":"CONWAY CT"},
+			{ "name":"HANAHAN CT"},
+			{ "name":"LOCKHEED CIR"},
+			{ "name":"BETSWORTH CT"},
+			{ "name":"BRECKENWOOD DR"},
+			{ "name":"BRADWYCK DR"},
+			{ "name":"WHEATSBURY DR"},
+			{ "name":"CHESTONE CT"}
+		] },
+		{ "name":"14) Fenton Estates", "streets": [
+			{ "name":"HARMONY HILL LN"},
+			{ "name":"EVANSHIRE DR"},
+			{ "name":"SUMMERGLOW CT"},
+			{ "name":"COCKLESHELL CT"},
+			{ "name":"YORKHILL DR"},
+			{ "name":"HIDDEN ROCK CT"}
+		] },
+		{ "name":"14a) Searstone Retirement", "streets": [
+			{ "name":"WALKER STONE DR"},
+			{ "name":"SEARSTONE DR"},
+			{ "name":"WINSTON HILL DR"}
+		] },
+		{ "name":"15) Providence Commons", "streets": [
+			{ "name":"CEDARPOST DR"},
+			{ "name":"BRIDLEBIT CT"},
+			{ "name":"CHAPS CT"},
+			{ "name":"TACK CT"},
+			{ "name":"STABLEGATE DR"},
+			{ "name":"CORRAL CT"},
+			{ "name":"HORSEPOND CT"},
+			{ "name":"EQUESTRIAN CT"},
+			{ "name":"LEGAULT DR", "min":"302"}
+		] },
+		{ "name":"16) Preston Forest", "streets": [
+			{ "name":"ALIDADE CT"},
+			{ "name":"BENEDETTI CT"},
+			{ "name":"N COSLETT CT"},
+			{ "name":"S COSLETT CT"},
+			{ "name":"SCHUBAUER DR"},
+			{ "name":"LINDENTHAL CT"},
+			{ "name":"CLENDENEN CT"},
+			{ "name":"LEGAULT DR", "max":"300"}
+		] },
+		{ "name":"17) Arlington Ridge", "streets": [
+			{ "name":"ARLINGTON RIDGE"},
+			{ "name":"BISCAYNE CIR"},
+			{ "name":"KENSBURY CIR"},
+			{ "name":"HOUSTON CIR"},
+			{ "name":"MARQUETTE DR"},
+			{ "name":"OLYMPIC DR"},
+			{ "name":"LANTANA CIR"}
+		] }
+	]
+}
+

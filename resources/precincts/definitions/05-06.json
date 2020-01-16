@@ -1,0 +1,194 @@
+{
+	"name": "Carpenter Elementary School",
+	"id": "05-06",
+	"subdivision": [
+		{ "name":"1) Heritage Pines West", "streets": [
+			{ "name":"HERITAGE PINES DR", "max":"3000"},
+			{ "name":"MUIR BROOK PL"},
+			{ "name":"UPLANDS CREEK DR"},
+			{ "name":"CRYSTAL BROOK LN"},
+			{ "name":"KNOTTS VALLEY LN"},
+			{ "name":"CYPRESS CREEK CT"},
+			{ "name":"SAWGRASS HILL CT"},
+			{ "name":"CARPENTER UPCHURCH RD"},
+			{ "name":"HERO PL"}
+		] },
+		{ "name":"2) Heritage Pines East", "streets": [
+			{ "name":"HERITAGE PINES DR", "min":"3001"},
+			{ "name":"INDIAN ELM LN"},
+			{ "name":"FRANKLIN HILLS PT"},
+			{ "name":"QUAKER DELL LN"},
+			{ "name":"ROCKPORT RIDGE WAY"}
+		] },
+		{ "name":"3) Preston Village NW ", "streets": [
+			{ "name":"PARMALEE CT"},
+			{ "name":"CONAGRA CT"},
+			{ "name":"WEINGARTEN PL"},
+			{ "name":"EAGLE MEADOW CT"},
+			{ "name":"FILTRONA CT"},
+			{ "name":"DEBROCK CT"},
+			{ "name":"BILLINGTON CT"},
+			{ "name":"GAMBARDELLI CT"},
+			{ "name":"CARPENTER CREEK PL"},
+			{ "name":"PRESTON VILLAGE WAY", "min":"300"}
+		] },
+		{ "name":"4) Preston Village North ", "streets": [
+			{ "name":"CONSIDINE CT"},
+			{ "name":"ABERSON CT"},
+			{ "name":"BARTICA CT"},
+			{ "name":"LISTOKIN CT"},
+			{ "name":"PECKSKILL CT"},
+			{ "name":"JESNICK LN"},
+			{ "name":"BERANEAK LN"},
+			{ "name":"MANCINO CT"},
+			{ "name":"HEDSPETH LN"},
+			{ "name":"KETRICK CT"},
+			{ "name":"MARSBURG LN"},
+			{ "name":"ECKLIN LN"},
+			{ "name":"FINNWAY LN"},
+			{ "name":"ABSHER CT"},
+			{ "name":"ROSALER CT"},
+			{ "name":"WALCOTT WAY"}
+		] },
+		{ "name":"5) Preston Village NE ", "streets": [
+			{ "name":"GOLDENTHAL CT"},
+			{ "name":"HARDENBROOK CT"},
+			{ "name":"KAMPRATH PL"},
+			{ "name":"VISHAY CT"},
+			{ "name":"BAYLISS CT"},
+			{ "name":"BANNERMAN LN"},
+			{ "name":"CLEARPORT DR"},
+			{ "name":"TRUMBLEY CT"},
+			{ "name":"CAVISTON WAY"},
+			{ "name":"ACKWORTH CT"}
+		] },
+		{ "name":"6) Preston Village South ", "streets": [
+			{ "name":"CHARIOT CT"},
+			{ "name":"DORIC CT"},
+			{ "name":"SHEPTON DR"},
+			{ "name":"ELSTOW CT"},
+			{ "name":"BEESTON CT"},
+			{ "name":"VYNE CT"},
+			{ "name":"LUTTERWORTH CT"},
+			{ "name":"LUDGATE CT"},
+			{ "name":"DRAYMORE WAY"},
+			{ "name":"CHERTSEY CT"},
+			{ "name":"OTMOOR LN"},
+			{ "name":"BENWELL CT"},
+			{ "name":"FREHOLD CT"},
+			{ "name":"UPCHURCH MEADOW RD"},
+			{ "name":"CIRCLE ON THE GREEN"},
+			{ "name":"PRESTON VILLAGE WAY", "max":"299"}
+		] },
+		{ "name":"7) Carramore ", "streets": [
+			{ "name":"DAVIS DR", "min":"2737", "max":"2737"},
+			{ "name":"TAMARAK WOOD CT"},
+			{ "name":"CRESTSTONE DR"},
+			{ "name":"ESPIRIT CT"},
+			{ "name":"LAWNWOOD CT"},
+			{ "name":"WILLOWMIST CT"},
+			{ "name":"AMBERMORE PL"},
+			{ "name":"HALCYON MEADOW DR"},
+			{ "name":"REVERE FOREST CT"},
+			{ "name":"CARRAMORE AVE"}
+		] },
+		{ "name":"8) Riggsbee Farm ", "streets": [
+			{ "name":"RHAPSODY CT"},
+			{ "name":"RATTLE SNAP CT"},
+			{ "name":"MARBLECREEK LN"},
+			{ "name":"NATCHEZ CT"},
+			{ "name":"BENTBROOK CT"},
+			{ "name":"FENTRESS CT"},
+			{ "name":"HICKORYWOOD BLVD"},
+			{ "name":"MARBLE FALLS WAY"},
+			{ "name":"WOODED HILL WAY"},
+			{ "name":"OXCROFT ST"},
+			{ "name":"OXYARD WAY"},
+			{ "name":"FIELDBROOK CT"},
+			{ "name":"RIGGSBEE FARM DR"},
+			{ "name":"STERLING RIDGE WAY"}
+		] },
+		{ "name":"9) Stone Creek Village ", "streets": [
+			{ "name":"SANTORINI DR"},
+			{ "name":"TRAVERTINE DR"},
+			{ "name":"SUNSTONE DR"},
+			{ "name":"VALLEYSTONE DR"},
+			{ "name":"MARBLE HOUSE CT"}
+		] },
+		{ "name":"10) Olde Carpenter ", "streets": [
+			{ "name":"NANNY REAMS LN"},
+			{ "name":"KATY STELLA DR"},
+			{ "name":"GRACE HODGE DR"},
+			{ "name":"MAUDE CT"},
+			{ "name":"OLDE CARPENTER WAY"},
+			{ "name":"MELVIN JACKSON DR"},
+			{ "name":"WILLIAM HENRY WAY"},
+			{ "name":"OLDE ALPHE CIR"}
+		] },
+		{ "name":"11) Magnolia ", "streets": [
+			{ "name":"MORRISVILLE CARPENTER RD", "min":"1600", "max":"1999"},
+			{ "name":"MAGNOLIA SONG CT"},
+			{ "name":"CARPENTER TOWN LN", "min":"1200"},
+			{ "name":"MAGNOLIA BIRCH CT"},
+			{ "name":"BRAEBROOK WAY"}
+		] },
+		{ "name":"12) Carpenter Village West ", "streets": [
+			{ "name":"LOUIS STEPHENS DR"},
+			{ "name":"DOMINION HILL DR"},
+			{ "name":"STAFFORD BROOK LN"},
+			{ "name":"GRANT FOREST LN"},
+			{ "name":"APRIL BLOOM LN"},
+			{ "name":"CARPENTER TOWN LN", "min":"1100", "max":"1199"},
+			{ "name":"BALLAD CREEK CT"},
+			{ "name":"BARCLAY VALLEY DR"},
+			{ "name":"ROZELLE VALLEY LN"}
+		] },
+		{ "name":"13) Carpenter Village Center West", "streets": [
+			{ "name":"CARPENTER TOWN LN", "max":"1099", "min":"900"},
+			{ "name":"BATTERY WALK LN"},
+			{ "name":"FRANKLIN MANOR LN"},
+			{ "name":"PRESIDENTS WALK LN"},
+			{ "name":"LORD LEVENS LN"},
+			{ "name":"ETON HALL LN"},
+			{ "name":"REVERE CROSSING LN"},
+			{ "name":"HAMILTON HEDGE PL"}
+		] },
+		{ "name":"14) Carpenter Village Center-East", "streets": [
+			{ "name":"CARPENTER TOWN LN", "max":"899"},
+			{ "name":"WHEELWRIGHT PL"},
+			{ "name":"HOPEWELL DOWNS LN"},
+			{ "name":"COMMONS WALK CIR"},
+			{ "name":"MONUMENT VIEW LN"},
+			{ "name":"LAUREL WREATH LN"},
+			{ "name":"POTOMAC GROVE PL"}
+		] },
+		{ "name":"15) Carpenter Village East ", "streets": [
+			{ "name":"MORRISVILLE CARPENTER RD", "min":"1100", "max":"1199"},
+			{ "name":"IVY TREE PL"},
+			{ "name":"MAGNOLIA BLOOM CT"},
+			{ "name":"WHITE BLOOM LN"},
+			{ "name":"POPLAR BRANCH LN"},
+			{ "name":"MADISON GROVE PL"}
+		] },
+		{ "name":"16) Lakeridge Townhomes ", "streets": [
+			{ "name":"WHITE LAKE CT"},
+			{ "name":"BADIN LAKE CT"},
+			{ "name":"LAKE TILLERY DR"},
+			{ "name":"LAKE NORMAN DR"},
+			{ "name":"LAKE BRANDT DR"},
+			{ "name":"GREAT LAKE DR"},
+			{ "name":"VALLEY SIDE CT"},
+			{ "name":"LAKE HICKORY CT"}
+		] },
+		{ "name":"17) Madison Place + Westover Park Townhomes ", "streets": [
+			{ "name":"DAVIS DR", "min":"3500", "max":"3550"},
+			{ "name":"KINGSTON GROVE DR"},
+			{ "name":"CHARLEVILLE CT"},
+			{ "name":"MURRAY GLEN DR"},
+			{ "name":"ASHMORE DR"},
+			{ "name":"LANDSER CT"},
+			{ "name":"BEELEY CT"},
+			{ "name":"ANNISTON CT"}
+		] }
+	]
+}

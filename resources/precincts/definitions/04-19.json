@@ -1,0 +1,88 @@
+{
+	"name": "Covenant Christian Church",
+	"id": "04-19",
+	"subdivision": [
+		{ "name":"1) Trafalgar East", "streets": [
+			{ "name":"TRAFALGAR LN", "max":"199"},
+			{ "name":"OTTERBEIN CT"},
+			{ "name":"QUEENS KNOLL CT"},
+			{ "name":"WHEATLEY WAY"},
+			{ "name":"VASHON CT"},
+			{ "name":"W DUTTON CT"},
+			{ "name":"RIPLEY CT"},
+			{ "name":"WABASH CIR"}
+		] },
+		{ "name":"2) Trafalgar West", "streets": [
+			{ "name":"TRAFALGAR LN", "min":"200"},
+			{ "name":"MAUMEE CT"},
+			{ "name":"QUARTERMAINE CT"},
+			{ "name":"SHAFTSBERRY CT"},
+			{ "name":"EXCALIBUR CT"},
+			{ "name":"SWALLOW HILL CT"},
+			{ "name":"LUDLOW CT"},
+			{ "name":"KALADAR CT"}
+		] },
+		{ "name":"3) Melbourne", "streets": [
+			{ "name":"BRIGH STONE DR"},
+			{ "name":"RED FIELD ST"}
+		] },
+		{ "name":"4) Bond Lake Dr Entry South / Vicsburg", "streets": [
+			{ "name":"APPOMATTOX RD"},
+			{ "name":"CROATAN CIR"},
+			{ "name":"GLEN ALPINE CIR"},
+			{ "name":"GETTYSBURG DR"},
+			{ "name":"MEDALLION CIR"},
+			{ "name":"CHALMETTE CT"},
+			{ "name":"VICKSBURG DR"}
+		] },
+		{ "name":"5) Carrington", "streets": [
+			{ "name":"SABLE CT"},
+			{ "name":"RAINMIST CIR"},
+			{ "name":"WINTERMIST DR"},
+			{ "name":"HIAWATHA CT"},
+			{ "name":"CUSTER TRL", "max":"113"}
+		] },
+		{ "name":"6) Charleston Woods", "streets": [
+			{ "name":"KIAWAH DR"},
+			{ "name":"CHAPARRAL CT"},
+			{ "name":"MINUTE MAN DR"},
+			{ "name":"CUSTER TRL", "min":"115"}
+		] },
+		{ "name":"7) Bond Lake West Shore", "streets": [
+			{ "name":"WOODARBOR CIR"},
+			{ "name":"WHITE SANDS DR"},
+			{ "name":"ODESSA CIR"},
+			{ "name":"THORNCLIFF CIR"},
+			{ "name":"WHITTLEWOOD DR"},
+			{ "name":"CROSSWIND DR"}
+		] },
+		{ "name":"8) Bond Pointe", "streets": [
+			{ "name":"SWISS STONE CT"},
+			{ "name":"SWISS LAKE DR"},
+			{ "name":"BOND LAKE DR"}
+		] },
+		{ "name":"9) Kenilworth", "streets": [
+			{ "name":"MALDON DR"},
+			{ "name":"FETZER CT"},
+			{ "name":"BEBINGTON DR"},
+			{ "name":"FROHLICH DR"}
+		] },
+		{ "name":"10) Huntsmore & Woods of Fairfax", "streets": [
+			{ "name":"OCONEE CT"},
+			{ "name":"WAGON TRAIL DR"},
+			{ "name":"FAIRFAX LN"},
+			{ "name":"RANCHERO CT"},
+			{ "name":"FRONTIER CT"},
+			{ "name":"SADDLEHORN CT"},
+			{ "name":"RAWHIDE CT"},
+			{ "name":"HUNTSMOOR LN"}
+		] },
+		{ "name":"11) Candlewood", "streets": [
+			{ "name":"CHATFIELD CT"},
+			{ "name":"LONESOME PINE DR"},
+			{ "name":"SEQUOIA CT"},
+			{ "name":"ACADIA CT"},
+			{ "name":"MUIR WOODS DR"}
+		] }
+	]
+}

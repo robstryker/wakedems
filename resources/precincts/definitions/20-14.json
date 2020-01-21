@@ -159,7 +159,7 @@
 			{ "name":"RAMBLEFORD DR"}
 		] },
 		{ "name":"9a) Morrisville Pkwy meets E Ferrell", "streets": [
-			{ "name":"MORRISVILLE PKWY", "max":"10100", "min":"9600"}
+			{ "name":"MORRISVILLE PKWY", "max":"10100", "min":"9600"},
 			{ "name":"E FERRELL RD"},
 			{ "name":"CAROLINA ROSE CT"},
 			{ "name":"STRATFORD RIDGE LN"},

@@ -2,6 +2,8 @@ package net.oxbeef.wake.voter.main.old;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
@@ -19,7 +21,7 @@ public class OldVoterMain {
 	public static final String COMMAND_UNIQUE_STREETS = "uniqueStreets";
 
 	public static void main(String[] args) throws IOException {
-		new OldVoterMain().run(COMMAND_CHECK_PRECINCT_INTEGRITY, new String[] {"04-15"});
+		new OldVoterMain().run(COMMAND_CHECK_PRECINCT_INTEGRITY, new String[] {"20-17"});
 	}
 
 	private String precinctDataLoc;
@@ -53,7 +55,9 @@ public class OldVoterMain {
 		}
 		VoterModel vm = loadVoterModel(precinctId, precinct);
 		Set<String> set = vm.getStreetsSet();
-		for( String s : set ) {
+		ArrayList<String> sorted = new ArrayList<String>(set);
+		Collections.sort(sorted);
+		for( String s : sorted ) {
 			System.out.println(s);
 		}
 		

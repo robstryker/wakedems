@@ -38,8 +38,8 @@ public class MainModel {
 		}
 		
 
-		String precinctDataLoc = ExternalDataSource.getInstance().getPrecinctDataLoc();
-		String definitionLoc = ExternalDataSource.getInstance().getDefinitionLoc();
+		String precinctDataLoc = getPrecinctDataLoc();
+		String definitionLoc = getPrecinctDefinitionLoc();
 
 		IPrecinct precinct = getPrecinct(precinctId, definitionLoc);
 		VoterModel vm = null;
@@ -53,6 +53,14 @@ public class MainModel {
 		return vm;
 	}
 
+	protected String getPrecinctDefinitionLoc() {
+		return ExternalDataSource.getInstance().getDefinitionLoc();
+	}
+
+	protected String getPrecinctDataLoc() {
+		return ExternalDataSource.getInstance().getPrecinctDataLoc();
+	}
+	
 	private VoterModel loadVoterModel(String precinctId, String precinctDataLoc) {
 		String fileName = precinctDataLoc + precinctId + ".tsv";
 		return PrecinctCore.loadVoterModel(new File(fileName));

@@ -1,0 +1,137 @@
+{
+	"name": "Cary Fire Station #5",
+	"id": "20-10",
+	"subdivision": [
+		{ "name":"1) Brookstone West", "streets": [
+			{ "name":"PARK YORK LN"},
+			{ "name":"JANEY BROOK CT"},
+			{ "name":"JOSEPH POND LN"},
+			{ "name":"BRIGHT BEGINNING WAY"},
+			{ "name":"LEWEY DR"},
+			{ "name":"POPLAR KNOLL CT"},
+			{ "name":"MURDOCK CREEK CT"},
+			{ "name":"DOWNING FOREST PL"},
+			{ "name":"FRYAR CREEK DR"},
+			{ "name":"CASTLEBURY CREEK CT"}
+		] },
+		{ "name":"2) Brookstone East", "streets": [
+			{ "name":"PINESTONE CT"},
+			{ "name":"STILLMAN CREEK DR"},
+			{ "name":"LEWEY BROOK DR"},
+			{ "name":"CARPENTER BROOK DR"},
+			{ "name":"STREAMVIEW DR"},
+			{ "name":"HADLEY CREEK DR"}
+		] },
+		{ "name":"3) Parkcrest", "streets": [
+			{ "name":"PARK VALLEY LN"},
+			{ "name":"PARKCREST DR"},
+			{ "name":"PARKMOUNT CIR"},
+			{ "name":"PARKRISE CT"},
+			{ "name":"PARKVINE CIR"},
+			{ "name":"PARKLEAF CIR"},
+			{ "name":"PARKBRANCH LN"},
+			{ "name":"PARKBOW CT"},
+			{ "name":"PARKGATE DR"},
+			{ "name":"PARKWALK CT"},
+			{ "name":"PARKROYALE LN"}
+		] },
+		{ "name":"4) Parknoll, Parkmeadow, Park arbor, park canyon", "streets": [
+			{ "name":"PARKHOLLOW CT"},
+			{ "name":"PARKMIST CIR"},
+			{ "name":"PARKMEADOW DR"},
+			{ "name":"PARKWHISPER CT"},
+			{ "name":"PARK OAKS CT"},
+			{ "name":"PARKTREE CT"},
+			{ "name":"PARKGROVE CT"},
+			{ "name":"PARKKNOLL LN"},
+			{ "name":"PARKWIND CT"},
+			{ "name":"PARKCANYON LN"},
+			{ "name":"PARKSPRING CT"},
+			{ "name":"PARKBROOK CIR"},
+			{ "name":"PARKARBOR LN"}
+		] },
+		{ "name":"5a) Wellsley North", "streets": [
+			{ "name":"CREEKHURST PL"},
+			{ "name":"BAUCOM CREEK CT"}
+			{ "name":"WIDDINGTON LN"},
+			{ "name":"SOUTHWOLD DR"},
+			{ "name":"BROMFIELD WAY"},
+			{ "name":"LULWORTH CT"},
+			{ "name":"SOMERSBY CT"},
+			{ "name":"ORMSBY CT"},
+			{ "name":"KETTLEWELL CT"},
+			{ "name":"TUTBURY PL"},
+			{ "name":"ROWLEY CT"},
+			{ "name":"FAWLEY CT"},
+			{ "name":"CRANBORNE LN", "max":"499"}
+		] },
+		{ "name":"5b) Wellsley South", "streets": [
+			{ "name":"CRANBORNE LN", "min":"500"},
+			{ "name":"BERGERON WAY"},
+			{ "name":"THORESBY CT"},
+			{ "name":"WOLLSTON CT"},
+			{ "name":"WILLENHALL CT"},
+			{ "name":"BATTENBURG CT"},
+			{ "name":"BARNBRIDGE CT"},
+			{ "name":"BARRIEDALE CIR"},
+			{ "name":"BARNINGHAM CT"},
+			{ "name":"WITTENHAM DR"},
+			{ "name":"SHERRINGHAM CT"},
+			{ "name":"BARNES SPRING CT"}
+		] },
+		{ "name":"6) Somerset", "streets": [
+			{ "name":"DIXIELAND TRL"},
+			{ "name":"CARPENTER UPCHURCH RD", "min":"2100", "max":"2200"},
+			{ "name":"GLEBE WAY"},
+			{ "name":"CRAFTON PARK LN"},
+			{ "name":"CUPOLA CHASE WAY"},
+			{ "name":"TICONDEROGA RD"},
+			{ "name":"FORT WORTH CT"},
+			{ "name":"HORNE CREEK CT"},
+			{ "name":"HALEY HOUSE LN"},
+			{ "name":"SANTA FE TRL"},
+			{ "name":"HENMORE BROOK DR"},
+			{ "name":"WYASTON CT"},
+			{ "name":"BIRDSGROVE CT"},
+			{ "name":"DERBY MILL CT"},
+			{ "name":"CONNEMARA DR"}
+		] },
+		{ "name":"7) Hadley Place + Berkeley", "streets": [
+			{ "name":"CITRUS PL"},
+			{ "name":"PARTHENI CT"},
+			{ "name":"JAVA CT"},
+			{ "name":"DOMETH CT"},
+			{ "name":"FRINGE TREE CT"},
+			{ "name":"MYERS FARM CT"},
+			{ "name":"KELLY SPRINGS CT"},
+			{ "name":"REEVE HALL DR"},
+			{ "name":"HIGH HOUSE RD", "min":"2300", "max":"2400"},
+			{ "name":"SIR WALKER LN"}
+		] },
+		{ "name":"8) White Bridge + Davis Square", "streets": [
+			{ "name":"GINGERGATE DR"},
+			{ "name":"LITTLEFORD LN"},
+			{ "name":"PLYERSMILL RD"},
+			{ "name":"PLAYFORD LN"},
+			{ "name":"KEMPMILL CT"},
+			{ "name":"DAYMIRE GLEN LN"},
+			{ "name":"DAYLIN DR"}
+		] },
+		{ "name":"9) Cornerstone Apts + Surrounding Area", "streets": [
+			{ "name":"FARROW GLEN LOOP"},
+			{ "name":"MABLEY PL"},
+			{ "name":"JENKS CARPENTER RD"},
+			{ "name":"WALDO ROOD BLVD"},
+			{ "name":"DESHIRE MIST LN"},
+			{ "name":"GRENDON PL"},
+			{ "name":"POND GLEN WAY"},
+			{ "name":"TERRASTONE PL"},
+			{ "name":"DRYSTACK WAY"},
+			{ "name":"TROLLEYSTONE CT"},
+			{ "name":"HIGHSTONE RD"}
+		] }
+	]
+}
+
+
+

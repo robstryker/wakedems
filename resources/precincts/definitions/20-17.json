@@ -1,0 +1,168 @@
+{
+	"name": "Highcroft Drive Elementary School",
+	"id": "20-17",
+	"subdivision": [
+		{ "name":"1) Cameron Pond", "streets": [
+			{ "name":"CARPENTER FIRE STATION RD"},
+			{ "name":"MERCER GRANT DR"},
+			{ "name":"BUXTON GRANT DR"},
+			{ "name":"MONTVILLE VALLEY CT"},
+			{ "name":"PARKMAN GRANT DR"},
+			{ "name":"HIGHCROFT DR", "min":"4437", "max":"4437"},
+			{ "name":"BRODIE LLOYD CT"},
+			{ "name":"MIDDLEFIELD HILL CT"},
+			{ "name":"MAGALLOWAY DR"},
+			{ "name":"BEACON FALLS CT"},
+			{ "name":"DRESDEN MEADOW CT"},
+			{ "name":"CAMERON POND DR"}
+		] },
+		{ "name":"2) Blakely", "streets": [
+			{ "name":"CHELSEA GROVE DR"},
+			{ "name":"RIVER BARK PL"},
+			{ "name":"MCGINN MANOR LN"},
+			{ "name":"INDIAN WELLS RD"},
+			{ "name":"CHEROKEE ROSE CT"},
+			{ "name":"PANTEGO TRL"},
+			{ "name":"HANCOCK RD"},
+			{ "name":"PAMLICO BAY DR"},
+			{ "name":"NC 55 HWY", "min":"3700", "max":"4100"}
+		] },
+		{ "name":"3) South Blakely", "streets": [
+			{ "name":"BISHOP BROOK CT"},
+			{ "name":"ANSLEY STREAM LN"},
+			{ "name":"HAYES HILL PL"},
+			{ "name":"KENSLEY HAVEN CT"},
+			{ "name":"BELMONT VIEW LOOP"},
+			{ "name":"BANKS KNOLL DR"},
+			{ "name":"SEDGEFIELD PARK LN"},
+			{ "name":"THOMPSON BLUFF DR"},
+			{ "name":"WACKENA RD"},
+			{ "name":"BURNBANK DR"},
+			{ "name":"HIGHGATE OAK DR"},
+			{ "name":"PARKHURST PL"}
+		] },
+		{ "name":"4) Morrisville / Green Hope West", "streets": [
+			{ "name":"ALDERSLEY WAY"},
+			{ "name":"STOCKWELL LN"},
+			{ "name":"POPLAR HIGH PL"},
+			{ "name":"TWYLA RD"},
+			{ "name":"HILLIARD LN"},
+			{ "name":"ROBIOUS CT"},
+			{ "name":"KEMPTHORNE RD"},
+			{ "name":"SYKES ST"},
+			{ "name":"HIGHCROFT DR", "min":"4900", "max":"4999"},
+			{ "name":"GIBSON CREEK PL"},
+			{ "name":"SIENNA HILL PL"},
+			{ "name":"STONECREST VIEW LN"},
+			{ "name":"TREMBATH LN"},
+			{ "name":"BROKENSHIRE ST"},
+			{ "name":"SHERGOLD ST"},
+			{ "name":"CAMBRIDGESHIRE LOOP"},
+			{ "name":"FRYARS GATE CT"},
+			{ "name":"HURKETT CT"},
+			{ "name":"TEVERSHAM WAY"},
+			{ "name":"FRYAR LN"}
+		] },
+		{ "name":"5) Morrisville / Green Hope East", "streets": [
+			{ "name":"CRAMPTON GROVE WAY"},
+			{ "name":"MISTY RISE DR"},
+			{ "name":"CHANNING PL"},
+			{ "name":"SCHOONER DR"},
+			{ "name":"STOWAGE DR"},
+			{ "name":"MANIFEST PL"},
+			{ "name":"COZY OAK AVE", "min":"1000"},
+			{ "name":"GREEN HOPE SCHOOL RD", "max":"7200"}
+		] },
+		{ "name":"6) Highcroft", "streets": [
+			{ "name":"TAMWORTH HILL LN"},
+			{ "name":"SEARS FARM RD"},
+			{ "name":"STRATHORN DR"},
+			{ "name":"LANDUFF CT"},
+			{ "name":"CROYDON GLEN CT"},
+			{ "name":"LACONIA WOODS PL"},
+			{ "name":"CHANDLER GRANT DR"},
+			{ "name":"ANTRIM MEADOW LN"},
+			{ "name":"GILMANTON RD"},
+			{ "name":"MILLSFIELD DR"},
+			{ "name":"CANDIA LN"},
+			{ "name":"HIGHCROFT DR", "min":"5000", "max":"5812"},
+			{ "name":"GREEN HOPE SCHOOL RD", "min":"7200"}
+		] },
+		{ "name":"7) Green Crossing", "streets": [
+			{ "name":"BOSCAWEN LN"},
+			{ "name":"PIERMONT DR"},
+			{ "name":"ROCKCASTLE DR"},
+			{ "name":"ALAMOSA PL"}
+		] },
+		{ "name":"8) Highcroft Village", "streets": [
+			{ "name":"NC 55 HWY", "min":"3300", "max":"3600"},
+			{ "name":"BARNET RIDGE CT"},
+			{ "name":"ENFIELD RIDGE DR"},
+			{ "name":"TALTON RIDGE DR"},
+			{ "name":"RETFORD GRANT CT"},
+			{ "name":"ROCKLAND RIDGE DR"},
+			{ "name":"JUTE CT"},
+			{ "name":"TILTH ST"},
+			{ "name":"BRASSICA LN"},
+			{ "name":"LEMSTER LN"},
+			{ "name":"COZY OAK AVE", "max":"999"}
+		] },
+		{ "name":"9) Westwood Park Apts", "streets": [
+			{ "name":"GLENDON WAY"}
+		] },
+		{ "name":"10) Brook Arbor Apts", "streets": [
+			{ "name":"ARBOR VIEW DR"},
+			{ "name":"BROOK ARBOR DR"}
+		] },
+		{ "name":"11) The Reserve ", "streets": [
+			{ "name":"MEADOWVALE CIR"},
+			{ "name":"STAGS LEAP CT"},
+			{ "name":"CUVASION CT"},
+			{ "name":"PAHLMEYER PL"},
+			{ "name":"DEER VALLEY DR"},
+			{ "name":"WILD BROOK CT"},
+			{ "name":"SILVERADO TRL"},
+			{ "name":"CAYMUS CT"},
+			{ "name":"BELL ARBOR CT"},
+			{ "name":"EDGEMORE AVE"},
+			{ "name":"FLORA SPRINGS DR"},
+			{ "name":"BALLATORE CT"},
+			{ "name":"JOLIESSE LN"},
+			{ "name":"LINDEMANS DR"},
+			{ "name":"CAKEBREAD CT"},
+			{ "name":"TAVERNELLE PL"},
+			{ "name":"BRIARDALE AVE"}
+		] },
+		{ "name":"12) Fieldstone Village", "streets": [
+			{ "name":"LYNCROFT LN"},
+			{ "name":"ROCKLAND CIR"},
+			{ "name":"LANDSDOWNE CT"},
+			{ "name":"FERNCROFT CT"},
+			{ "name":"PAPER CHASE CT"},
+			{ "name":"SPRINGLAND CT"},
+			{ "name":"WEST ACRES CRES"},
+			{ "name":"ELMVIEW DR"},
+			{ "name":"BEDBROOK CT"},
+			{ "name":"GRANDTREE CT"},
+			{ "name":"HIGHFIELD AVE"},
+			{ "name":"FERNCREST CT"},
+			{ "name":"WEST HILL DR"},
+			{ "name":"GLENMORE RD"},
+			{ "name":"NORTHCOTE DR"},
+			{ "name":"EARNSCLIFF CT"}
+		] },
+		{ "name":"13) 540 SouthEast", "streets": [
+			{ "name":"WAKE ROBIN LN"},
+			{ "name":"TEABERRY CT"},
+			{ "name":"ARROW LEAF CIR"},
+			{ "name":"BRANTON DR"},
+			{ "name":"PANORAMIC CT"},
+			{ "name":"PICTURESQUE LN"},
+			{ "name":"REDBUD CIR"},
+			{ "name":"GREEN LEVEL WEST RD", "min":"2800", "max":"2999"}
+		] }
+	]
+}
+
+
+

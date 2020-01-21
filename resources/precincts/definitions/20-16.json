@@ -1,0 +1,130 @@
+{
+	"name": "Mills Park Elementary School",
+	"id": "20-16",
+	"subdivision": [
+		{ "name":"1) East of Highway 55 +", "streets": [
+			{ "name":"BRICKFIELD DR"},
+			{ "name":"FIREBRICK DR"},
+			{ "name":"SALT GLAZE LN"},
+			{ "name":"KING CLOSER DR"},
+			{ "name":"PETTY FARM RD"}
+		] },
+		{ "name":"2) Panther Creek; Between 55 and 540", "streets": [
+			{ "name":"SCENIC CLUB DR"},
+			{ "name":"AUSTENITE LN"},
+			{ "name":"PINE PERCH ST"},
+			{ "name":"CAROLINA LILY ST"},
+			{ "name":"BELLFLOWER CT"},
+			{ "name":"ALSTON MANOR ST"}
+		] },
+		{ "name":"3) Bexler Panther Creek Apts", "streets": [
+			{ "name":"ALEXAN DR"},
+			{ "name":"FORESIGHT DR"},
+			{ "name":"HINDSIGHT DR"},
+			{ "name":"LANCER DR"},
+			{ "name":"BEOWULF LN"},
+			{ "name":"SNAP TURTLE DR"}
+		] },
+		{ "name":"4) Cameron Pond; Between 55 and 540", "streets": [
+			{ "name":"THOMASTON HILL CT"},
+			{ "name":"BANCROFT BROOK DR"},
+			{ "name":"RUSSO VALLEY DR"},
+			{ "name":"SIMBURY GLEN CT"},
+			{ "name":"CRANSLEY MEADOW LN"},
+			{ "name":"HOWARD RD"},
+			{ "name":"CAMERON POND DR"},
+			{ "name":"CARPENTER FIRE STATION RD"}
+		] },
+		{ "name":"5) Camden Village Townhomes", "streets": [
+			{ "name":"DOVE COTTAGE LN"},
+			{ "name":"MICHIGAN AVE"},
+			{ "name":"CARY GLEN BLVD", "min":"3800", "max":"3899"},
+			{ "name":"HOFMAN CT"},
+			{ "name":"SUMMERHOUSE RD"},
+			{ "name":"LUCIA LN"},
+			{ "name":"LALEX LN"}
+		] },
+		{ "name":"6) Between Green Level Church & 540, North", "streets": [
+			{ "name":"VANDALIA DR"},
+			{ "name":"BRANNING CT"},
+			{ "name":"CARPENTER GLENN DR"},
+			{ "name":"BLOSSOM GROVE DR"},
+			{ "name":"MORRIS DALE LN"},
+			{ "name":"SCARLET PETAL LN"}
+		] },
+		{ "name":"7) Amberly", "streets": [
+			{ "name":"RESIDENTS CLUB DR"},
+			{ "name":"GALLBERRY DR"},
+			{ "name":"YELLOW BIRCH DR"},
+			{ "name":"WATER HICKORY DR"},
+			{ "name":"MOUNTAIN MAPLE DR"},
+			{ "name":"GREEN ALDER CT"},
+			{ "name":"COURTYARD PL"},
+			{ "name":"MCCRIMMON PKWY", "max":"7635", "min":"7500"}
+		] },
+		{ "name":"8) Amberly Lake South", "streets": [
+			{ "name":"PRAIRIE MEADOWS CT"},
+			{ "name":"EMERALD DOWNS RD"},
+			{ "name":"JOCKEY CLUB CIR"},
+			{ "name":"NORTHLANDS DR"},
+			{ "name":"BROOKHILL WAY"}
+		] },
+		{ "name":"9) Yates West", "streets": [
+			{ "name":"CALLUM PL"},
+			{ "name":"ARVIND OAKS CIR"},
+			{ "name":"HERALDS WAY"},
+			{ "name":"BICKERTON CT"},
+			{ "name":"SPINNAKER CT"}
+		] },
+		{ "name":"10a) Lexington Park @ Amberly North", "streets": [
+			{ "name":"LONE STAR WAY"},
+			{ "name":"SEATTLE SLEW LN"},
+			{ "name":"AFFIRMED WAY"},
+			{ "name":"WHIRLAWAY CT"},
+			{ "name":"LONGCHAMP LN"},
+			{ "name":"WAR ADMIRAL CT"},
+			{ "name":"CAMDEN YARDS WAY"}
+		] },
+		{ "name":"10b) Lexington Park @ Amberly South", "streets": [
+			{ "name":"RONI CT"},
+			{ "name":"DELTA DOWNS DR"},
+			{ "name":"DEL MAR OAKS DR"},
+			{ "name":"REMINGTON OAKS CIR"},
+			{ "name":"ASHDOWN FOREST LN"},
+			{ "name":"EDGELAKE PL"}
+		] },
+		{ "name":"11) Courtney Reserve @ Cary Park", "streets": [
+			{ "name":"BRANCH HOLLOW DR"},
+			{ "name":"FALLEN ACORN CIR"},
+			{ "name":"RIPARIAN WAY"},
+			{ "name":"RESIDENT CIR"},
+			{ "name":"BENTTREE FOREST DR"}
+		] },
+		{ "name":"12) The Grove @ Cary Park", "streets": [
+			{ "name":"PONY CLUB CIR"},
+			{ "name":"BUHRSTONE MILL DR"},
+			{ "name":"GLENWATER DR"},
+			{ "name":"CARY RESERVE DR"},
+			{ "name":"BRUSHY MOUNTAIN ST"}
+		] },
+		{ "name":"12) Mills Park South", "streets": [
+			{ "name":"INDIGO RIDGE PL"},
+			{ "name":"WESTFALEN DR"},
+			{ "name":"GOLDEN HARVEST LOOP"},
+			{ "name":"RIGGINS MILL RD"},
+			{ "name":"JEWEL CREEK DR"}
+		] },
+		{ "name":"13) Hilliard Forest", "streets": [
+			{ "name":"DITTFIELD PL"},
+			{ "name":"SHURLING PL"},
+			{ "name":"BANKHEAD DR"},
+			{ "name":"CHRISTIAN CREEK PL"},
+			{ "name":"HILLIARD FOREST DR"},
+			{ "name":"GREEN LEVEL CHURCH RD", "min":"9212", "max":"9212"},
+			{ "name":"GREEN HOPE SCHOOL RD"},
+			{ "name":"ABERCOM CT"}
+		] }
+	]
+}
+
+

@@ -29,23 +29,26 @@
 			{ "name":"BROOK FRYAR ST"},
 			{ "name":"POINTER CREEK CT"}
 		] },
-		{ "name":"3) Devereaux", "streets": [
+		{ "name":"3a) Devereaux NorthEast", "streets": [
+			{ "name":"WEDGEMERE ST"},
+			{ "name":"WHITEBERRY DR"},
+			{ "name":"CATCHPENNY CT"},
+			{ "name":"WESTBOURNE CT"},
+			{ "name":"WENTBRIDGE RD"},
+			{ "name":"WEXWOOD CT"},
+			{ "name":"WALMSLEY CT"},
+			{ "name":"WARSON CT"},
+			{ "name":"WADSWORTH CT"},
+			{ "name":"WAKEHURST DR", "max":"599"}
+		] },
+		{ "name":"3b) Devereaux SouthWest", "streets": [
+			{ "name":"WAKEHURST DR", "min":"600"},
+			{ "name":"WHITEHAVEN LN"},
 			{ "name":"HOLMHURST CT"},
-			{ "name":"WAKEHURST DR"},
 			{ "name":"CALEBRA WAY"},
 			{ "name":"DREXELBROOK CT"},
 			{ "name":"DALESHIRE DR"},
 			{ "name":"DEL RIO DR"},
-			{ "name":"WHITEHAVEN LN"},
-			{ "name":"WEDGEMERE ST"},
-			{ "name":"WHITEBERRY DR"},
-			{ "name":"CATCHPENNY CT"},
-			{ "name":"WENTBRIDGE RD"},
-			{ "name":"WALMSLEY CT"},
-			{ "name":"WARSON CT"},
-			{ "name":"WEXWOOD CT"},
-			{ "name":"WADSWORTH CT"},
-			{ "name":"WESTBOURNE CT"},
 			{ "name":"CARBE CT"}
 		] },
 		{ "name":"4) Upchurch Farms", "streets": [

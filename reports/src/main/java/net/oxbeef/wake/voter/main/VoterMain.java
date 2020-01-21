@@ -1,7 +1,9 @@
 package net.oxbeef.wake.voter.main;
 
+import java.io.File;
 import java.io.IOException;
 
+import net.oxbeef.wake.voter.model.data.source.ExternalDataSource;
 import net.oxbeef.wake.voter.reports.NewlyRegisteredVotersReport;
 import net.oxbeef.wake.voter.reports.PrecinctPartyMakeupReport;
 import net.oxbeef.wake.voter.reports.PrecinctPartyRegistrationChangeReport;

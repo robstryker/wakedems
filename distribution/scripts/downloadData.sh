@@ -1,6 +1,7 @@
 #!/bin/sh
 cd ../resources/precincts/voters/
 rm current/* 
+mkdir current
 ./fetch_ncboe.sh
 rm previous/*
 ./fetch_previous_ncboe.sh

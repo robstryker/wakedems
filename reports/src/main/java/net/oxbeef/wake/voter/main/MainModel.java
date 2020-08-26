@@ -1,6 +1,7 @@
 package net.oxbeef.wake.voter.main;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import net.oxbeef.wake.voter.model.ChangedPartyModel;
@@ -64,6 +65,20 @@ public class MainModel {
 	private VoterModel loadVoterModel(String precinctId, String precinctDataLoc) {
 		String fileName = precinctDataLoc + precinctId + ".tsv";
 		return PrecinctCore.loadVoterModel(new File(fileName));
+	}
+	
+	public String[] listAllPrecincts() {
+		ArrayList<String> ret = new ArrayList<>();
+		String root = getPrecinctDataLoc();
+		File f = new File(root);
+		File[] children = f.listFiles();
+		for( int i = 0; i < children.length; i++ ) {
+			String name = children[i].getName();
+			if( name.endsWith(".tsv")) {
+				ret.add(name.substring(0, name.length()-4));
+			}
+		}
+		return (String[]) ret.toArray(new String[ret.size()]);
 	}
 	
 	private VoterModel loadVoterModel(String precinctId, IPrecinct precinct, String precinctDataLoc) {

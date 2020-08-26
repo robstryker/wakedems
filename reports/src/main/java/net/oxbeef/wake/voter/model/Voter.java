@@ -1,18 +1,24 @@
 package net.oxbeef.wake.voter.model;
 
-public class Voter implements IVoterColumnsNCBOE {
+import java.util.regex.Pattern;
 
+public class Voter implements IVoterColumnsNCBOE {
+	private static String REMOVE_QUOTES_REGEX = "^\"|\"$";
+	private static Pattern REMOVE_QUOTES_PATTERN = Pattern.compile(REMOVE_QUOTES_REGEX);
 	
 	private String[] segments;
 	public Voter(String line) {
 		segments = line.split("\t");
+		for( int i = 0; i < segments.length; i++ ) {
+			segments[i] = REMOVE_QUOTES_PATTERN.matcher(segments[i]).replaceAll("");
+		}
 	}
 	
 	// Use the constants here and we'll automatically 
 	// remove 1 from it so we can access the correct index
 	// Also trim leading and trailing quotes
 	private String getSegment(int i) {
-		return segments[i-1].replaceAll("^\"|\"$", "");
+		return segments[i-1];
 	}
 	public String getRegistrationDate() {
 		return getSegment(registr_dt);
@@ -62,6 +68,27 @@ public class Voter implements IVoterColumnsNCBOE {
 	public String getName() {
 		return getSegment(first_name) + " " + getSegment(last_name);
 	}
+
+	public String getFirstName() {
+		return getSegment(first_name);
+	}
+
+	public String getMiddleName() {
+		return getSegment(middle_name);
+	}
+
+	public String getLastName() {
+		return getSegment(last_name);
+	}
+
+	public String getSuffix() {
+		return getSegment(name_suffix_lbl);
+	}
+
+	public String getStatus() {
+		return getSegment(voter_status_desc);
+	}
+
 	public String getPrecinct() {
 		return getSegment(precinct_abbrv);
 	}
@@ -70,5 +97,9 @@ public class Voter implements IVoterColumnsNCBOE {
 	}
 	public String getNCID() {
 		return getSegment(ncid);
+	}
+	
+	public String toString() {
+		return getFirstName() + " " + getMiddleName() + " " + getLastName() + " " + getSuffix();
 	}
 }

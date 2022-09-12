@@ -10,6 +10,9 @@ import net.oxbeef.wake.voter.model.Voter;
 public class StatisticsUtil {
 
 	public static double getAverageAge(List<Voter> voters) {
+		if( voters.size() == 0 )
+			return -1;
+		
 		double total = 0;
 		int count = 0;
 		for( Voter v : voters ) {
@@ -24,6 +27,10 @@ public class StatisticsUtil {
 	}
 
 	public static double getMedianAge(List<Voter> voters) {
+		if( voters.size() == 0 )
+			return -1;
+		if( voters.size() < 2 ) 
+			return voters.get(0).getAgeInt();
 		ArrayList<Voter> tmp = new ArrayList<Voter>(voters);
 		Collections.sort(tmp, new Comparator<Voter>() {
 			@Override

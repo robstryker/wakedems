@@ -17,7 +17,7 @@ public class RecentlyRegisteredFilter implements IVoterFilter {
 	}
 	@Override
 	public boolean accepts(Voter v) {
-
+		String s = v.getVoterRegistrationNumber();
 		String date = v.getRegistrationDate();
         try {
 			Date rd = TSV_DATE.parse(date);

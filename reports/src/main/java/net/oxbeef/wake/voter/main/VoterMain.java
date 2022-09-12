@@ -33,8 +33,9 @@ public class VoterMain {
 		StringBuffer sb = new StringBuffer();
 		sb.append("Report for precinct " + precinct + "\n\n");
 		
-		appendReportHeader("Newly Registered Voters: past 6 months", sb);
-		sb.append(indent(new NewlyRegisteredVotersReport(precinct, model, 6).run(),5));
+		int numMonths = 12;
+		appendReportHeader("Newly Registered Voters: past " + numMonths + " months", sb);
+		sb.append(indent(new NewlyRegisteredVotersReport(precinct, model, numMonths).run(),5));
 		
 		appendReportHeader("Changed Party Registration", sb);
 		sb.append(indent(new PrecinctPartyRegistrationChangeReport(precinct, model).run(), 5));

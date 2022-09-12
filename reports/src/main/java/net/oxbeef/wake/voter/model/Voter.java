@@ -8,7 +8,7 @@ public class Voter implements IVoterColumnsNCBOE {
 	
 	private String[] segments;
 	public Voter(String line) {
-		segments = line.split("\t");
+		segments = line.split("\t", -1);
 		for( int i = 0; i < segments.length; i++ ) {
 			segments[i] = REMOVE_QUOTES_PATTERN.matcher(segments[i]).replaceAll("");
 		}
@@ -24,7 +24,8 @@ public class Voter implements IVoterColumnsNCBOE {
 		return getSegment(registr_dt);
 	}
 	public String getAge() {
-		return getSegment(birth_age);
+		// column was changed; close enough
+		return getSegment(age_at_year_end);
 	}
 	public int getAgeInt() {
 		return Integer.parseInt(getAge());

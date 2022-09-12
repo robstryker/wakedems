@@ -1,3 +1,6 @@
+/**
+ * This file seems very specific and... well.. i'm not sure what data files it was actually using
+ */
 package net.oxbeef.wake.voter.registration;
 
 import java.io.File;

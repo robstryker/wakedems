@@ -117,10 +117,13 @@ public class NewlyRegisteredVotersReport {
 		IPrecinctSubdivision[] all = p.getSubdivisions();
 		for (int i = 0; i < all.length; i++) {
 			IPrecinctSubdivision sd = all[i];
-			sb.append("\n\nSubdivision: " + sd.getName() + "\n");
 			List<Voter> sdVoters = VoterUtility.findVotersInSubdivision(sd, list);
 			List<String> parties = VoterUtility.getUniqueParties(sdVoters);
+			if( sdVoters.size() == 0 ) {
+				continue;
+			}
 			Collections.sort(parties);
+			sb.append("\n\nSubdivision: " + sd.getName() + "\n");
 			for( String party : parties ) {
 				List<Voter> sdPartyVoters = VoterUtility.getVotersOfParty(sdVoters,  party);
 				sb.append(party + "=" + sdPartyVoters.size() + "  ");

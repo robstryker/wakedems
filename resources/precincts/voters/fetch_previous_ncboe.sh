@@ -1,4 +1,11 @@
 #!/bin/sh
+# We don't have a way to automate discovery of previous historical backups of ncboe data.
+# The file format for a historical backup is different than from a current run. 
+# We pull the urls from a file named historical_filenames. 
+#
+# You can discover official historical files at the following url
+# and add them to our `historical_filenames` file manually.  :| 
+# Go to https://dl.ncsbe.gov/index.html?prefix=data/Snapshots/
 
 previousData=`{ cat historical_filenames | cut -d "_" -f 3 &  date --date="-6 month" "+%Y%m%d"; } | sort | grep -v ".zip" -C 1 | head -n 1`
 previousData2="VR_Snapshot_${previousData}"

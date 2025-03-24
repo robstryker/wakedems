@@ -1,60 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                             http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>net.oxbeef.wake.voter</groupId>
-	<artifactId>parent</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<name>Wake Voter Report Generators</name>
-	<description>A Program to parse and generate reports from voter data</description>
-	<url>https://github.com/robstryker/wakedems/</url>
-	<scm>
-		<url>https://github.com/robstryker/wakedems</url>
-	</scm>
-	<issueManagement>
-		<system>GitHub Issues</system>
-		<url>https://github.com/robstryker/wakedems/issues</url>
-	</issueManagement>
-	<licenses>
-		<license>
-			<name>Eclipse Public License 2.0</name>
-			<url>https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-	<developers>
-		<developer>
-			<name>Rob Stryker</name>
-			<email>rstryker@redhat.com</email>
-			<url>https://github.com/robstryker</url>
-			<id>robstryker</id>
-		</developer>
-	</developers>
-
-	<properties>
-	</properties>
-
-	<modules>
-		<module>reports</module>
-		<module>distribution</module>
-	</modules>
-
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<configuration>
-						<source>1.8</source>
-						<target>1.8</target>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-
-	</build>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.oxbeef.wakedems2</groupId>
+  <artifactId>wakedems2</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>wakedems2</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-dmr</artifactId>
+        <version>1.4.1.Final</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.2.0</version>
+            <configuration>
+                <archive>
+                    <manifest>
+			    <mainClass>net.oxbeef.wakedems2.App</mainClass>
+		    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 </project>

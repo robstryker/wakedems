@@ -11,7 +11,7 @@ public class Settings {
 		return "92";
 	}
 	public String getPrecinct() {
-		return "04-04";
+		return "20-17";
 	}
 	public int getLookbackPeriodDays() {
 		return 120;

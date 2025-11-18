@@ -8,6 +8,7 @@
 		] },
 		{ "name":"2) Stoneybrook Estates", "streets": [
 			{ "name":"MAYNARD RD"},
+			{ "name":"SE MAYNARD RD"},
 			{ "name":"OAKRIDGE RD"},
 			{ "name":"HAMPTON VALLEY RD"},
 			{ "name":"WILLOWBROOK DR"},
@@ -35,6 +36,7 @@
 			{ "name":"STONY POINT LN"},
 			{ "name":"HEATHERS GLN"},
 			{ "name":"YUBINARANDA CIR"},
+			{ "name":"HEATHERS GLEN"},
 			{ "name":"BOXWOOD CT"},
 			{ "name":"CREEKSTONE LN"},
 			{ "name":"FARMINGTON WOODS DR", "min":"400"}
@@ -102,7 +104,8 @@
 		] },
 		{ "name":"11) Waltonwood Retirement", "streets": [
 			{ "name":"KIRKSHIRE CIR"},
-			{ "name":"CARY PKWY", "min":"740", "max":"760"}
+			{ "name":"CARY PKWY", "min":"740", "max":"760"},
+			{ "name":"SE CARY PKWY", "min":"740", "max":"760"}
 		] },
 		{ "name":"12) Spring Arbor Assisted Living", "streets": [
 			{ "name":"KILDAIRE FARM RD", "min":"1705", "max":"1705"},
@@ -134,6 +137,9 @@
 			{ "name":"LARKWOOD LN"},
 			{ "name":"FROSTWOOD DR"},
 			{ "name":"TRYON RD", "min":"6590", "max":"6670"}
+		] },
+		{ "name":"16) Templeton", "streets": [
+			{ "name":"BRIGHTMORE DR"}
 		] }
 	]
 }

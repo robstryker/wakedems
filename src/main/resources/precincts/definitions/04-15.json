@@ -6,7 +6,8 @@
 			{ "name":"LAKE HOLLOW CIR"},
 			{ "name":"SHADY MEADOW CIR"},
 			{ "name":"SPRINGFORK DR"},
-			{ "name":"EDGEHILL PKWY"}
+			{ "name":"EDGEHILL PKWY"},
+			{ "name": "HIGH HOUSE RD", "min": "303", "max": "303"}
 		] },
 		{ "name":"2) Westview Cove", "streets": [
 			{ "name":"MARSHFIELD PL"},

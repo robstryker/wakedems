@@ -42,13 +42,18 @@
 			{ "name":"HAMPSHIRE CT"},
 			{ "name":"BUTTERWOOD CT"},
 			{ "name":"WOODBURY CT"},
-			{ "name":"MAYNARD RD", "min":"900", "max":"1200"}
+			{ "name":"MAYNARD RD", "min":"900", "max":"1200"},
+			{ "name":"SE MAYNARD RD", "min":"900", "max":"1200"}
+		] },
+		{ "name":"2a) Fenton", "streets": [
+			{ "name":"FENTON MAIN ST"}
 		] },
 		{ "name":"3) Irongate", "streets": [
 			{ "name":"SLOAN DR"},
 			{ "name":"S MONTREAL CT"},
 			{ "name":"HUDSON CT"},
 			{ "name":"PARK ST", "min":"500"},
+			{ "name":"E PARK ST", "min":"500"},
 			{ "name":"RYAN RD"},
 			{ "name":"HOLTZ LN"},
 			{ "name":"MAYODAN DR"},
@@ -59,6 +64,7 @@
 		{ "name":"4) Coronado", "streets": [
 			{ "name":"CORONADO WAY"},
 			{ "name":"RALPH DR", "min":"0", "max":"599"},
+			{ "name":"SE MAYNARD ST", "min":"409", "max":"409"},
 			{ "name":"WARREN AVE", "min":"400", "max":"440"},
 			{ "name":"WALNUT ST", "min":"307", "max":"433", "type":"odd"},
 			{ "name":"ABBEY LN", "min":"0", "max":"199"},
@@ -73,14 +79,15 @@
 			{ "name":"KEENER ST"},
 			{ "name":"S WALKER ST"},
 			{ "name":"PARK ST", "min":"0", "max":"499"},
+			{ "name":"E PARK ST", "min":"0", "max":"499"},
 			{ "name":"S ACADEMY ST"},
 			{ "name":"DRY AVE"},
-			{ "name":"WALNUT ST", "min":"115", "max":"209", "type":"odd"},
+			{ "name":"WALNUT ST", "min":"115", "max":"301", "type":"odd"},
 			{ "name":"ACADEMY ST"},
 			{ "name":"MAYTON VIEW LN"}
 		] },
 		{ "name":"6) Kildaire Farms North", "streets": [
-			{ "name":"WALNUT ST", "min":"100", "max":"220", "type":"even"},
+			{ "name":"WALNUT ST", "min":"100", "max":"301", "type":"even"},
 			{ "name":"WALKER ST"},
 			{ "name":"KILDAIRE FARM RD"},
 			{ "name":"BYRUM ST"},
@@ -94,32 +101,38 @@
 		] },
 		{ "name":"7) Greenwood Forest SW", "streets": [
 			{ "name":"CORNWALL RD", "min":"0", "max":"299"},
+			{ "name":"E CORNWALL RD", "min":"0", "max":"299"},
 			{ "name":"ED SIMMONS CT"},
 			{ "name":"BETHENIA PL"},
 			{ "name":"MEDCON CT"},
 			{ "name":"KYLIE SAVANNAH CT"},
 			{ "name":"WILSHIRE DR"},
 			{ "name":"MAYNARD RD", "min":"0", "max":"200"},
+			{ "name":"SE MAYNARD RD", "min":"0", "max":"200"},
 			{ "name":"WASHINGTON ST"},
 			{ "name":"SYLVIA LN"}
 		] },
 		{ "name":"8) Greenwood Forest Center", "streets": [
-			{ "name":"MAYNARD RD", "min":"200", "max":"400"},
+			{ "name":"MAYNARD RD", "min":"200", "max":"409"},
+			{ "name":"SE MAYNARD RD", "min":"200", "max":"409"},
 			{ "name":"BRIARCLIFF ST"},
 			{ "name":"BRIARCLIFF LN"},
 			{ "name":"BRYCE PL"},
 			{ "name":"WARREN AVE", "min":"900"},
 			{ "name":"RALPH DR", "min":"900"},
 			{ "name":"KATHRYN ST"},
-			{ "name":"CORNWALL RD", "min":"300", "max":"540"}
+			{ "name":"CORNWALL RD", "min":"300", "max":"540"},
+			{ "name":"E CORNWALL RD", "min":"300", "max":"540"}
 		] },
 		{ "name":"9) Greenwood Forest East + Tanglewood", "streets": [
 			{ "name":"CINDY ST"},
 			{ "name":"CORNWALL RD", "min":"550"},
+			{ "name":"E CORNWALL RD", "min":"550"},
 			{ "name":"ELLYNN DR", "min":"600"},
 			{ "name":"GREENWOOD DR"},
 			{ "name":"FERNWOOD CIR"},
 			{ "name":"MAYNARD RD", "min":"500", "max":"700"},
+			{ "name":"SE MAYNARD RD", "min":"500", "max":"700"},
 			{ "name":"TANGLEWOOD DR", "min":"900"},
 			{ "name":"ELM ST"},
 			{ "name":"ASHE AVE"},
@@ -140,6 +153,7 @@
 		] },
 		{ "name":"11) Chatham", "streets": [
 			{ "name":"CHATHAM ST"},
+			{ "name":"E CHATHAM ST"},
 			{ "name":"NOWELL CREEK CT"},
 			{ "name":"TRINITY RD"}
 		] }

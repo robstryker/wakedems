@@ -36,14 +36,16 @@
 			{ "name":"KING HENRY CT"}
 		] },
 		{ "name":"4) Normandie", "streets": [
-			{ "name":"DEVIMY CT"},
+			{ "name":"N DEVIMY CT"},
+			{ "name":"S DEVIMY CT"},
 			{ "name":"VICTOR HUGO DR"},
 			{ "name":"DEGAS CT"},
 			{ "name":"ESPLANADE CT"},
 			{ "name":"EMILE ZOLA DR"},
 			{ "name":"RENOIR CT"},
 			{ "name":"BALZAC CT"},
-			{ "name":"JULES VERNE WAY"}
+			{ "name":"E JULES VERNE WAY"},
+			{ "name":"W JULES VERNE WAY"}
 		] },
 		{ "name":"5) MacGregor Towns North", "streets": [
 			{ "name":"MICHELIN PL"},

@@ -52,5 +52,15 @@ public class CheckMain {
         		System.out.println("   " + subIt.next().getName());
         	}
     	}
+    	
+    	if( keys.size() == 0 ) {
+    		System.out.println("Voters / residences per subdivision: ");
+    		IPrecinctSubdivision[] subs = precinct.getSubdivisions();
+    		for( int i = 0; i < subs.length; i++ ) {
+        		List<Voter> inSub = VoterUtility.findVotersInSubdivision(subs[i], vm.getAll());
+        		HashMap<String, List<Voter>> byRes = VoterUtility.votersByResidence(inSub);
+        		System.out.println("   " + subs[i].getName() + ": " + inSub.size() + " / " + byRes.size());
+    		}
+    	}
 	}
 }

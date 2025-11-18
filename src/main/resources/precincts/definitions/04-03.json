@@ -13,11 +13,12 @@
 			{ "name":"OXFORD PL"},
 			{ "name":"SCOTT PL"},
 			{ "name":"STURDIVANT DR", "min":"1200", "max":"1250"},
+			{ "name":"GLENPARK PL"},
 			{ "name":"WALNUT ST", "min":"1307", "max":"1307"}
 		] },
 		{ "name":"3) Walnut Hills 2", "streets": [
 			{ "name":"STURDIVANT DR", "min":"900", "max":"1199", "type":"even"},
-			{ "name":"ASKHAM DR", "min":"0", "max":"1128"}
+			{ "name":"ASKHAM DR", "min":"0", "max":"1223"}
 		] },
 		{ "name":"4) Walnut Hills 3", "streets": [
 			{ "name":"STURDIVANT DR", "min":"1000", "max":"1199", "type":"odd"},
@@ -41,6 +42,8 @@
 			{ "name":"ASHFORD LN"},
 			{ "name":"FERNLEA CT"},
 			{ "name":"SPRINGHILL CT"},
+			{ "name":"E SPRINGHILL CT"},
+			{ "name":"W SPRINGHILL CT"},
 			{ "name":"GRAY OWL GARTH"},
 			{ "name":"DEERFIELD DR"},
 			{ "name":"NOTTINGHAM DR", "min":"1200", "max":"1230"}
